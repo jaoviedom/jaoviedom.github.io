@@ -338,6 +338,7 @@ background: none;
         font-size: 3.5em;
         margin: 2% 0 30px;
         line-height: 1.2em;
+        text-shadow: 6px 6px 0px rgba(0,0,0,0.2);
     }
 
     .banner-content p {
@@ -345,6 +346,7 @@ background: none;
         font-weight: normal;
         font-style: normal;
         color: #fff;
+        text-shadow: 6px 6px 0px rgba(0,0,0,0.2);
     }
 
 .da-slider {
@@ -445,6 +447,7 @@ color: #FDFDFD !important;
 /*Skills*/
 .skilltitle {
 text-align: right;
+font-size: 12px;
 font-weight: 600;
 padding-right: 0px;
 }

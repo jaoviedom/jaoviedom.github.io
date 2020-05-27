@@ -354,7 +354,13 @@
                     <div class="row timeline-movement">
 
                         <div class="timeline-badge">
-                            <span class="timeline-balloon-date-day">Ago</span>
+                            <span class="timeline-balloon-date-day">
+                                <script>
+                                    var meses = new Array ("Ene","Feb","Mar","Abr","May","Jun","Jul","Ago","Sep","Oct","Nov","Dic");
+                                    var f=new Date();
+                                    document.write(meses[f.getMonth()]);
+                                </script>
+                            </span>
                             <span class="timeline-balloon-date-month">2020</span>
                         </div>
 

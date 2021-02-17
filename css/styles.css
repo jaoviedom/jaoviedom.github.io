@@ -12,7 +12,7 @@ body {
     font-size: 14px;
     font-family: 'PT Sans', sans-serif;
     -webkit-font-smoothing: antialiased;
-    background: #E4E4E4;
+    /* background: #E4E4E4; */
 }
 
 ::selection {
@@ -127,11 +127,10 @@ margin: 4px;
 	font-size: 12px;
     position: fixed;
     width: 100%;
-    background: #518dc4;
+    background: #1F64BF;
     z-index: 50;
     border-radius: 0;
     top: 0px;
-    border-bottom: 1px solid #1342F5;
 }
 
 .navbar-inverse .navbar-toggle {
@@ -139,16 +138,13 @@ margin: 4px;
     background-color: #518DC4;
 }
 .header .navbar {
-margin: 0;
-background: transparent !important;
+    margin: 0;
+    background: transparent !important;
 }
-    .navbar-inverse .navbar-toggle .icon-bar {
-        /*background-color: #CC4646;*/;
-    }
 
-    .navbar-inverse .navbar-toggle:hover, .navbar-inverse .navbar-toggle:focus {
-        background: #518DC4;
-    }
+.navbar-inverse .navbar-toggle:hover, .navbar-inverse .navbar-toggle:focus {
+    background: #518DC4;
+}
 
 .navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li > a:focus {
     color: #518DC4;
@@ -158,24 +154,19 @@ background: transparent !important;
     background: #fff;
 }
 .navbar-inverse .navbar-nav > li > a {
-	color: #2213A3;
+	color: #FFF;;
 }
 .navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li > a:focus {
-color: #FFFFFF;
+    color: #FFFFFF;
 }
 .navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus {
-color: #FFFFFF;
-background: none;
+    color: #FFFFFF;
+    background: none;
 }	
-.navbar-toggle {
-}
 /*.carousel-inner*/
 #myCarousel {
     margin-top: 50px;
     border-bottom: 4px solid #CC4646;
-}
-
-.carousel-inner > .item {
 }
 
 .carousel-caption {
@@ -230,9 +221,12 @@ background: none;
 
 .navbar-brand b {
     color: #fff;
-    /*font-family: 'Indie Flower', cursive;*/
-    font-family: 'Homemade Apple', cursive;
+    font-family: 'Kaushan Script', cursive;
 	font-weight:400;
+}
+
+.fondo-navbar {
+    width: 100%;
 }
 
 .logo {

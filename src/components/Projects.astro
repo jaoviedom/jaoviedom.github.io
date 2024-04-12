@@ -1,0 +1,175 @@
+---
+import Link from "../icons/Link.astro";
+import LinkButton from "./LinkButton.astro";
+import Html from "../icons/Html.astro";
+import Css from "../icons/Css.astro";
+import Javascript from "../icons/Javascript.astro";
+import GitHub from "../icons/GitHub.astro";
+import Laravel from "../icons/Laravel.astro";
+import MySQL from "../icons/MySQL.astro";
+import Django from "../icons/Django.astro";
+import Python from "../icons/Python.astro";
+import Unity from "../icons/Unity.astro";
+
+const TAGS = {
+  HTML: {
+    name: "HTML",
+    class: "bg-[#EC6431]",
+    icon: Html,
+  },
+  CSS: {
+    name: "CSS",
+    class: "bg-[#0089CA]",
+    icon: Css,
+  },
+  JS: {
+    name: "JavaScript",
+    class: "bg-[#F2DE5F]",
+    icon: Javascript,
+  },
+  Laravel: {
+    name: "Laravel",
+    class: "bg-[#FF4629]",
+    icon: Laravel,
+  },
+  MySQL: {
+    name: "MySQL",
+    class: "bg-[#0076A0]",
+    icon: MySQL,
+  },
+  Python: {
+    name: "Python",
+    class: "bg-[#30B58A]",
+    icon: Python,
+  },
+  Django: {
+    name: "Django",
+    class: "bg-[#30B58A]",
+    icon: Django,
+  },
+  Unity: {
+    name: "Unity",
+    class: "bg-[#000]",
+    icon: Unity,
+  },
+};
+const PROJECTS = [
+  {
+    title: "En Línea SDA",
+    description:
+      "Plataforma para la gestión de pedidos de una empresa de catering para empresas y hospitales. Este proyecto involucró la creación de una aplicación web robusta que permite a los clientes realizar pedidos, gestionar la facturación, realizar auditorías de cocinas satélite y mantener el control de los registros de calidad en tiempo real. Presenta una experiencia fluida e intuitiva tanto para los usuarios finales como para los administradores del sistema.",
+    link: "https://www.enlinea-sda.com",
+    github: "https://github.com/jaoviedom/enlinea-sda-web.git",
+    image: "./projects/enlinea.webp",
+    tags: [TAGS.Laravel, TAGS.MySQL, TAGS.HTML, TAGS.CSS, TAGS.JS],
+  },
+  {
+    title: "SAGI",
+    description:
+      "Plataforma diseñada para facilitar la gestión integral de proyectos y productos de investigación, desarrollo tecnológico e innovación dentro de un grupo especializado en investigación. Esta herramienta representa un avance significativo en la coordinación y seguimiento de actividades dentro del ámbito de la investigación, ofreciendo funcionalidades clave como la asignación de tareas, el seguimiento de progreso, la gestión de recursos y la colaboración en tiempo real. Con un enfoque en la eficiencia y la colaboración, esta plataforma proporciona una base sólida para la planificación y ejecución de proyectos de investigación, asegurando una gestión efectiva y un progreso continuo hacia los objetivos establecidos.",
+    link: "",
+    github:
+      "https://github.com/desarrollandoapps/Gesti-n-de-proyectos-de-investigaci-n.git",
+    image: "./projects/sagi.webp",
+    tags: [TAGS.Laravel, TAGS.MySQL, TAGS.HTML, TAGS.CSS, TAGS.JS],
+  },
+  {
+    title: "Unicorn",
+    description:
+      "Herramienta de apoyo a los procesos de reclutamiento, infiriendo el porcentaje de adaptación que tiene un candidato frente al equipo al que se integraría, en otras palabras, el grado de compatibilidad que puede tener el candidato con el grupo. Se utilizó el inventario de personalidad IPIP-NEO-FFI de donde se obtiene el ADN de la empresa, con el cual se entrena una red neuronal artificial perceptrón multicapa, con seis neuronas en la capa de entrada, una neurona en la capa de salida y una capa oculta de 12 neuronas. El resultado es una aplicación web multiplataforma desarrollada en lenguaje de programación Python, que se vale del kit keras para crear la red neuronal descrita.",
+    link: "",
+    github: "https://github.com/desarrollandoapps/unicorn.git",
+    image: "./projects/unicorn.webp",
+    tags: [TAGS.Django, TAGS.Python, TAGS.MySQL, TAGS.HTML, TAGS.CSS, TAGS.JS],
+  },
+  {
+    title: "AR4BI",
+    description:
+      "Augmented Reality for Bone Injuries, es una aplicación para móviles desarrollada en Unity, que permite apropiar conocimientos acerca de lesiones óseas por medio de realidad aumentada. La aplicación fue presentada en el congreso INNODOCT18 galardonada con el reconocimiento 'The best presentation'.",
+    link: "",
+    github: "https://github.com/desarrollandoapps/unicorn.git",
+    image: "./projects/ar4bi.webp",
+    tags: [TAGS.Unity],
+  },
+  {
+    title: "Viabilidad de proyectos",
+    description:
+      "Plataforma para evaluar la viabilidad de ideas de proyectos de investigación, desarrollo tecnológico e innovación (I+D+i) en el contexto de un acelerador dedicado al impulso de proyectos. Esta herramienta digital representa un hito en la gestión eficiente y precisa de proyectos complejos, transformando ideas en prototipos funcionales con el respaldo de un equipo multidisciplinario altamente especializado. Diseñada con un enfoque en la viabilidad y la eficacia, la plataforma ofrece un conjunto completo de herramientas para evaluar, desarrollar y materializar proyectos, asegurando un acompañamiento integral desde la concepción hasta la implementación.",
+    link: "",
+    github: "https://github.com/jaoviedom/semana-ingenieria.git",
+    image: "./projects/evaluacion_ideas.webp",
+    tags: [TAGS.Laravel, TAGS.MySQL, TAGS.HTML, TAGS.CSS, TAGS.JS],
+  },
+  {
+    title: "Semana de la ingeniería",
+    description:
+      "Plataforma para la gestión y promoción de la Semana de la Ingeniería de la Universidad Cooperativa de Colombia, sede Ibagué. Esta emocionante iniciativa reúne una amplia gama de eventos, desde conferencias hasta talleres, en una experiencia digitalmente integrada. Diseñé y desarrollé esta plataforma para brindar a estudiantes y profesionales una herramienta completa y fácil de usar, donde puedan explorar la programación, inscribirse en eventos de su interés y proporcionar valiosas evaluaciones para mejorar aún más la calidad de la experiencia.",
+    link: "",
+    github: "https://github.com/jaoviedom/Viabilidad-de-proyectos.git",
+    image: "./projects/semana_ingenieria.webp",
+    tags: [TAGS.Laravel, TAGS.MySQL, TAGS.HTML, TAGS.CSS, TAGS.JS],
+  },
+  {
+    title: "Pequeño LMS",
+    description:
+      "Pequeña plataforma para la administración de aprendizaje, donde una empresa puede crear los módulos de un curso y anexar material de estudio y preguntas de refuerzo.",
+    link: "",
+    github: "https://github.com/desarrollandoapps/lms.git",
+    image: "./projects/enlinea.webp",
+    tags: [TAGS.Laravel, TAGS.MySQL, TAGS.HTML, TAGS.CSS, TAGS.JS],
+  },
+];
+---
+
+<div class="flex flex-col gap-y-16">
+  {
+    PROJECTS.map(({ image, title, description, tags, link, github }) => (
+      <article class="flex flex-col space-x-0 space-y-8 group md:flex-row md:space-x-8 md:space-y-0">
+        <div class="w-full md:w-1/2">
+          <div class="relative flex flex-col items-center col-span-6 row-span-5 gap-8 transition duration-500 ease-in-out transform shadow-xl overflow-clip rounded-xl sm:rounded-xl md:group-hover:-translate-y-1 md:group-hover:shadow-2xl lg:border lg:border-gray-800 lg:hover:border-gray-700 lg:hover:bg-gray-800/50">
+            <img
+              alt="Recién llegado vs 5 años en Nueva Zelanda"
+              class="object-cover object-top w-full h-56 transition duration-500 sm:h-full md:scale-110 md:group-hover:scale-105"
+              loading="lazy"
+              src={image}
+            />
+          </div>
+        </div>
+
+        <div class="w-full md:w-1/2 md:max-w-lg">
+          <h3 class="text-2xl font-bold text-gray-100">{title}</h3>
+          <div class="flex flex-wrap mt-2">
+            <ul class="flex flex-row mb-2 gap-x-2">
+              {tags.map((tag) => (
+                <li>
+                  <span
+                    class={`flex gap-x-2 rounded-full text-xs ${tag.class} py-1 px-2 `}
+                  >
+                    <tag.icon class="size-4" />
+                    {tag.name}
+                  </span>
+                </li>
+              ))}
+            </ul>
+
+            <div class="mt-2 text-gray-400">{description}</div>
+            <footer class="flex items-end justify-start mt-4 gap-x-4">
+              {github && (
+                <LinkButton href={github}>
+                  <GitHub class="size-6" />
+                  Code
+                </LinkButton>
+              )}
+              {link && (
+                <LinkButton href={link}>
+                  <Link class="size-4" />
+                  Preview
+                </LinkButton>
+              )}
+            </footer>
+          </div>
+        </div>
+      </article>
+    ))
+  }
+</div>

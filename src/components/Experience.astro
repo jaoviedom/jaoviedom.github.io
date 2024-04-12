@@ -1,0 +1,38 @@
+---
+import ExperienceItem from "./ExperienceItem.astro";
+
+const EXPERIENCE = [
+  {
+    date: "Actualmente...",
+    title: "Desarrollador Full-stack",
+    company: "DesarrollandoApps",
+    description:
+      "Como desarrollador fullstack y fundador de mi propia empresa, fusiono mi pasión por la tecnología con mi visión empresarial para crear soluciones digitales innovadoras. Desde el diseño inicial hasta la implementación y más allá, lidero el desarrollo de proyectos completos, aprovechando mi experiencia tanto en el frontend como en el backend para ofrecer productos de alta calidad. Mi enfoque centrado en el cliente y mi compromiso con la excelencia técnica impulsan el éxito de cada proyecto que emprendo. A través de la colaboración con un equipo talentoso y la aplicación de las últimas tecnologías, estoy dedicado a impulsar el crecimiento y la innovación.",
+  },
+  {
+    date: "Actualmente...",
+    title: "Instructor Investigador en el área de informática.",
+    company: "Sena Regional Tolima",
+    description:
+      "Con una trayectoria sólida como Instructor Investigador en el área de informática, he dedicado mi carrera a impartir conocimientos y conducir investigaciones en el fascinante mundo del desarrollo de software. A lo largo de los años, he tenido el privilegio de guiar a estudiantes y colegas en el dominio de conceptos informáticos complejos, al tiempo que he contribuido al avance del campo a través de proyectos de investigación innovadores. Mi compromiso con la excelencia académica y la exploración continua me ha permitido no solo formar mentes brillantes, sino también dejar una marca significativa en el panorama de la informática.",
+    link: "https://twitch.tv/midudev",
+  },
+  {
+    date: "Actualmente...",
+    title: "Docente catedrático",
+    company: "Universidad Cooperativa de Colombia",
+    description:
+      "Como docente catedrático en el programa de Ingeniería de Sistemas, he tenido el privilegio de compartir mi pasión por la tecnología y el desarrollo de software con una amplia gama de estudiantes. A lo largo de mi carrera, he liderado cursos especializados, guiando a futuros profesionales a través de los fundamentos y las últimas tendencias del desarrollo. Mi enfoque no solo se centra en impartir conocimientos, sino también en fomentar el pensamiento crítico y la creatividad, preparando a los estudiantes para enfrentar los desafíos del mundo digital en constante evolución.",
+  },
+];
+---
+
+<ol class="relative border-s border-gray-200 ml-3.5">
+  {
+    EXPERIENCE.map((experience) => (
+      <li class="mb-10 ms-4">
+        <ExperienceItem {...experience} />
+      </li>
+    ))
+  }
+</ol>

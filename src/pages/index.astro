@@ -1,0 +1,88 @@
+---
+import Badge from "../components/Badge.astro";
+import SocialPill from "../components/SocialPill.astro";
+import LinkedinIcon from "../icons/Linkedin.astro";
+import GitHubIcon from "../icons/GitHub.astro";
+import MailIcon from "../icons/Mail.astro";
+import Layout from "../layouts/Layout.astro";
+import Experience from "../components/Experience.astro";
+import SectionContainer from "../components/SectionContainer.astro";
+import Footer from "../components/Footer.astro";
+import Briefcase from "../icons/Briefcase.astro";
+import Code from "../icons/Code.astro";
+import Projects from "../components/Projects.astro";
+import AboutMe from "@/components/AboutMe.astro";
+import ProfileCheck from "@/icons/ProfileCheck.astro";
+---
+
+<Layout
+  title="Porfolio de Jose Oviedo - Desarrollador y Programador Web con +10 años de experiencia."
+  description="¡Bienvenido al Portafolio de Jose Alonso Oviedo Monroy! Soy un Desarrollador y Programador Web con más de 10 años de experiencia, dedicado a crear soluciones digitales innovadoras y de alta calidad. Explora mi trabajo y descubre cómo puedo ayudarte a alcanzar tus objetivos en el mundo digital."
+>
+  <main class="px-4">
+    <SectionContainer class="py-44 pb-24">
+      <img
+        id="yo"
+        class="size-44 mb-4 opacity-90"
+        src="./images/jaoviedom.webp"
+        alt="jaoviedom photo"
+      />
+      <h1
+        class="text-white text-3xl md:text-4xl xl:text-5xl font-bold flex flex-row gap-x-4 pb-4"
+      >
+        Hola, soy Jose Oviedo <Badge>Disponible para trabajar</Badge>
+      </h1>
+      <h2 class="text-xl lg:text-2xl text-wrap max-w-[700px]">
+        <span>+10 años de experiencia.</span>
+        <span class="text-yellow-200/90"> Desarrollador Web Full-stack. </span>
+        <span class="text-red-200/90"> De Ibagué, Colombia 🇨🇴.</span>
+        <span class="opacity-80">Creador de soluciones únicas.</span>
+      </h2>
+
+      <nav class="flex gap-4 mt-8 mx-auto flex-wrap">
+        <SocialPill href="https://www.linkedin.com/in/jaoviedom/">
+          <LinkedinIcon class="size-4 md:size-6" />
+          LinkedIn
+        </SocialPill>
+        <SocialPill href="https://github.com/jaoviedom/">
+          <GitHubIcon class="size-4 md:size-6" />
+          GitHub
+        </SocialPill>
+        <SocialPill href="mailto:jaoviedomon@gmail.com">
+          <MailIcon class="size-4 md:size-6" />
+          jaoviedomon@gmail.com
+        </SocialPill>
+      </nav>
+    </SectionContainer>
+    <SectionContainer id="experience">
+      <h2
+        class="text-xl md:text-3xl font-semibold mb-6 flex gap-x-3 items-center"
+      >
+        <Briefcase class="size-7" />
+        Experiencia laboral
+      </h2>
+      <Experience />
+    </SectionContainer>
+
+    <SectionContainer id="projects">
+      <h2
+        class="text-xl md:text-3xl font-semibold mb-6 flex gap-x-3 items-center"
+      >
+        <Code class="size-7" />
+        Proyectos
+      </h2>
+      <Projects />
+    </SectionContainer>
+
+    <SectionContainer id="about" class="mt-6">
+      <h2
+        class="text-xl md:text-3xl font-semibold mb-6 flex gap-x-3 items-center"
+      >
+        <ProfileCheck class="size-7" />
+        Sobre mí
+      </h2>
+      <AboutMe />
+    </SectionContainer>
+    <Footer />
+  </main>
+</Layout>

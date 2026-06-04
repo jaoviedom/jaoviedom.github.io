@@ -1,0 +1,3634 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0093)https://scienti.minciencias.gov.co/cvlac/visualizador/generarCurriculoCv.do?cod_rh=0001546334 -->
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+        <title>CvLAC - RG</title>
+<script>
+	var texto="";
+	var NS4 = (document.layers); // Which browser?
+	var IE4 = (document.all);
+	var win = window; // window to search.
+	var n = 0;
+	
+	function resaltar(valor){
+	var encontro=0;
+	var donde=0;
+	//valor=document.getElementById('tt').value;
+	reemplazar=RegExp(valor,"i");
+	por="<span style=\u0022background-Color:yellow;\u0022>"+valor+"</span>";
+	if(texto==""){texto=document.body.innerHTML};
+	txt=texto.split(">");
+	for (x=0;x<txt.length;x++){
+	desde=(txt[x].indexOf("<")!=-1)?txt[x].indexOf("<"):0;
+	tempP=txt[x].slice(0,desde);
+	tempU=txt[x].slice(desde);
+	tempPx=tempP.split(" ");
+	for(y=0;y<tempPx.length;y++){
+	if(tempPx[y].search(reemplazar)!=-1){
+	tempPx[y]=tempPx[y].replace(reemplazar,por);
+	encontro+=1;
+	}
+	}
+	txt[x]=tempPx.join(" ")+tempU;
+	}
+	document.body.innerHTML=txt.join(">");
+	//alert((encontro==0)?"No se encontro ''"+valor+"''":"Se encontraron "+encontro+" coincidencias");
+	encontro=null;
+	donde=null;
+	}
+	
+	<!-- Original by http://javascript.internet.com More javascripts http://www.hypergurl.com -->
+	
+	function findInPage(str) {
+	//resaltar(str);
+	var txt, i, found; if (str == "") return false; // Find next occurance of the given string on the page, wrap around to the
+	// start of the page if necessary.
+	if (NS4) { // Look for match starting at the current point. If not found, rewind
+	// back to the first match.
+	if (!win.find(str)) while(win.find(str, false, true))
+	n++; else n++; // If not found in either direction, give message. if (n == 0)
+	alert("Not found."); } if (IE4) { txt = win.document.body.createTextRange();
+	// Find the nth match from the top of the page.
+	for (i = 0; i <= n && (found = txt.findText(str)) != false; i++) { txt.moveStart("character", 1); txt.moveEnd("textedit"); } // If found, mark it and scroll it into view.
+	if (found) { txt.moveStart("character", -1); txt.findText(str);
+	txt.select(); txt.scrollIntoView(); n++; } // Otherwise, start over at the top of the page and find first match.
+	else { if (n > 0) { n = 0; findInPage(str);
+	} // Not found anywhere, give message.
+	else alert("Not found."); } }
+	return false; }
+</script>
+        <meta name="google-site-verification" content="i8iweOHAFYQV0nLnM5KwROxv6enyqJioSpdx0w_uZSI">                        
+    
+        <meta name="google-site-verification" content="i8iweOHAFYQV0nLnM5KwROxv6enyqJioSpdx0w_uZSI">
+        <link href="./CvLAC - RG_files/visualizador.css" type="text/css" rel="stylesheet">
+        <meta content="no-cache" http-equiv="pragma">
+        
+    </head>
+
+<body>
+
+<div class="wrapper">
+            <div class="header">
+
+                <div class="menubar">
+                    <ul class="mmenu" style="height:23px;padding:2px;">
+                        <li><a class="menu" href="https://scienti.minciencias.gov.co/cvlac/visualizador/generarCurriculoCv.do?cod_rh=0001546334#" style="width:100px">Datos generales</a>
+
+                            <ul>
+                                <li><a class="menu" href="https://scienti.minciencias.gov.co/cvlac/visualizador/generarCurriculoCv.do?cod_rh=0001546334#datos_generales">Identificación</a></li>
+                                <li><a class="menu" href="https://scienti.minciencias.gov.co/cvlac/visualizador/generarCurriculoCv.do?cod_rh=0001546334#redes_identificadoes">Redes sociales académicas</a></li>
+                                <li><a class="menu" href="https://scienti.minciencias.gov.co/cvlac/visualizador/generarCurriculoCv.do?cod_rh=0001546334#red_identificadores">Identificadores de autor</a></li>
+                                <li><a class="menu" href="https://scienti.minciencias.gov.co/cvlac/visualizador/generarCurriculoCv.do?cod_rh=0001546334#formacion_acad">Formación académica</a></li>
+                                <li><a class="menu" href="https://scienti.minciencias.gov.co/cvlac/visualizador/generarCurriculoCv.do?cod_rh=0001546334#formacion_comp">Formación complementaria</a></li>
+                                <li><a class="menu" href="https://scienti.minciencias.gov.co/cvlac/visualizador/generarCurriculoCv.do?cod_rh=0001546334#estancias_posdoctorales">Estancias posdoctorales</a></li>
+                                <li><a class="menu" href="https://scienti.minciencias.gov.co/cvlac/visualizador/generarCurriculoCv.do?cod_rh=0001546334#experiencia">Experiencia profesional</a></li>
+                                <li><a class="menu" href="https://scienti.minciencias.gov.co/cvlac/visualizador/generarCurriculoCv.do?cod_rh=0001546334#otra_info_personal">Otra información personal</a></li>
+                            </ul>
+
+                        </li>
+                        <li><a class="menu" href="https://scienti.minciencias.gov.co/cvlac/visualizador/generarCurriculoCv.do?cod_rh=0001546334#" style="width:130px">Actividades formación</a>
+
+                            <ul>
+                                <li><a class="menu" href="https://scienti.minciencias.gov.co/cvlac/visualizador/generarCurriculoCv.do?cod_rh=0001546334#asesorias">Asesorías</a></li>
+                                <li><a class="menu" href="https://scienti.minciencias.gov.co/cvlac/visualizador/generarCurriculoCv.do?cod_rh=0001546334#curso_corta_du">Cursos de corta duración</a></li>
+                                <li><a class="menu" href="https://scienti.minciencias.gov.co/cvlac/visualizador/generarCurriculoCv.do?cod_rh=0001546334#trabajos_dirigi">Trabajos dirigidos/tutorías</a></li>
+                            </ul>
+
+                        </li>
+                        <li><a class="menu" href="https://scienti.minciencias.gov.co/cvlac/visualizador/generarCurriculoCv.do?cod_rh=0001546334#" style="width:120px">Actividades evaluador</a>
+
+                            <ul>
+                                <li><a class="menu" href="https://scienti.minciencias.gov.co/cvlac/visualizador/generarCurriculoCv.do?cod_rh=0001546334#jurado">Jurado comisiones evaluadoras de trabajo de grado</a></li>
+                                <li><a class="menu" href="https://scienti.minciencias.gov.co/cvlac/visualizador/generarCurriculoCv.do?cod_rh=0001546334#par">Par evaluador</a></li>
+                                <li><a class="menu" href="https://scienti.minciencias.gov.co/cvlac/visualizador/generarCurriculoCv.do?cod_rh=0001546334#comite">Participación en comité de evaluación</a></li>
+                            </ul>
+
+                        </li>
+                        <li><a class="menu" href="https://scienti.minciencias.gov.co/cvlac/visualizador/generarCurriculoCv.do?cod_rh=0001546334#" style="width:130px">Apropiación social</a>
+
+                            <ul>
+                                <li><a class="menu" href="https://scienti.minciencias.gov.co/cvlac/visualizador/generarCurriculoCv.do?cod_rh=0001546334#edicion">Edición</a></li>
+                                <li><a class="menu" href="https://scienti.minciencias.gov.co/cvlac/visualizador/generarCurriculoCv.do?cod_rh=0001546334#evento">Evento científico</a></li>
+                                <li><a class="menu" href="https://scienti.minciencias.gov.co/cvlac/visualizador/generarCurriculoCv.do?cod_rh=0001546334#re_co">Redes de conocimiento</a></li>
+                                <li><a class="menu" href="https://scienti.minciencias.gov.co/cvlac/visualizador/generarCurriculoCv.do?cod_rh=0001546334#asc_for">Fortalecimiento o solución de asuntos de interés social</a></li>									
+                                <li><a class="menu" href="https://scienti.minciencias.gov.co/cvlac/visualizador/generarCurriculoCv.do?cod_rh=0001546334#asc_tra">Trabajo conjunto entre un Centro de Ciencia y un grupo de investigación</a></li>									
+                                <li><a class="menu" href="https://scienti.minciencias.gov.co/cvlac/visualizador/generarCurriculoCv.do?cod_rh=0001546334#asc_gen">Generación de insumos de política pública y normatividad</a></li>									
+                                <li><a class="menu" href="https://scienti.minciencias.gov.co/cvlac/visualizador/generarCurriculoCv.do?cod_rh=0001546334#asc_cad">Fortalecimiento de cadenas productivas</a></li>									
+                                <li><a class="menu" href="https://scienti.minciencias.gov.co/cvlac/visualizador/generarCurriculoCv.do?cod_rh=0001546334#div_ced">Publicaciones editoriales no especializadas</a></li>									
+                                <li><a class="menu" href="https://scienti.minciencias.gov.co/cvlac/visualizador/generarCurriculoCv.do?cod_rh=0001546334#div_cda">Producciones de contenido digital Audiovisual</a></li>									
+                                <li><a class="menu" href="https://scienti.minciencias.gov.co/cvlac/visualizador/generarCurriculoCv.do?cod_rh=0001546334#div_cds">Producciones de contenido digital Sonoro</a></li>									
+                                <li><a class="menu" href="https://scienti.minciencias.gov.co/cvlac/visualizador/generarCurriculoCv.do?cod_rh=0001546334#div_cdr">Producciones de contenido digital Recursos gráficos</a></li>									
+                                <li><a class="menu" href="https://scienti.minciencias.gov.co/cvlac/visualizador/generarCurriculoCv.do?cod_rh=0001546334#div_ctr">Producción de estrategias y contenidos transmedia</a></li>									
+                                <li><a class="menu" href="https://scienti.minciencias.gov.co/cvlac/visualizador/generarCurriculoCv.do?cod_rh=0001546334#div_des">Desarrollos web</a></li>									
+
+                            </ul>
+
+                        </li>
+
+                        <li><a class="menu" href="https://scienti.minciencias.gov.co/cvlac/visualizador/generarCurriculoCv.do?cod_rh=0001546334#" style="width:140px">Producción bibliográfica</a>
+
+                            <ul>
+                                <li><a class="menu" href="https://scienti.minciencias.gov.co/cvlac/visualizador/generarCurriculoCv.do?cod_rh=0001546334#articulos">Artículos</a></li>
+                                <li><a class="menu" href="https://scienti.minciencias.gov.co/cvlac/visualizador/generarCurriculoCv.do?cod_rh=0001546334#libros">Libros</a></li>
+                                <li><a class="menu" href="https://scienti.minciencias.gov.co/cvlac/visualizador/generarCurriculoCv.do?cod_rh=0001546334#capitulos">Capítulos de libro</a></li>
+                                <li><a class="menu" href="https://scienti.minciencias.gov.co/cvlac/visualizador/generarCurriculoCv.do?cod_rh=0001546334#textos">Textos en publicaciones no científicas</a></li>
+                                <li><a class="menu" href="https://scienti.minciencias.gov.co/cvlac/visualizador/generarCurriculoCv.do?cod_rh=0001546334#otra_prod_biblio">Otra producción bibliogáfica</a></li>
+                                <li><a class="menu" href="https://scienti.minciencias.gov.co/cvlac/visualizador/generarCurriculoCv.do?cod_rh=0001546334#lib_tra">Traducciones Filológicas y Edición de Fuentes</a></li>
+                                <li><a class="menu" href="https://scienti.minciencias.gov.co/cvlac/visualizador/generarCurriculoCv.do?cod_rh=0001546334#lib_cre">Libro de creación (Piloto)</a></li>
+                                <li><a class="menu" href="https://scienti.minciencias.gov.co/cvlac/visualizador/generarCurriculoCv.do?cod_rh=0001546334#lib_for">Libro de Formación</a></li>
+                                <li><a class="menu" href="https://scienti.minciencias.gov.co/cvlac/visualizador/generarCurriculoCv.do?cod_rh=0001546334#lib_div">Libros de divulgación y/o Compilación de divulgación</a></li>
+                                <li><a class="menu" href="https://scienti.minciencias.gov.co/cvlac/visualizador/generarCurriculoCv.do?cod_rh=0001546334#lib_man">Manuales y Guías Especializadas</a></li>
+
+                            </ul>
+
+                        </li>	
+                        <li><a class="menu" href="https://scienti.minciencias.gov.co/cvlac/visualizador/generarCurriculoCv.do?cod_rh=0001546334#" style="width:120px">Producción Técnica</a>
+
+                            <ul>
+                                <li><a class="menu" href="https://scienti.minciencias.gov.co/cvlac/visualizador/generarCurriculoCv.do?cod_rh=0001546334#patentes">Patentes</a></li>
+                                <li><a class="menu" href="https://scienti.minciencias.gov.co/cvlac/visualizador/generarCurriculoCv.do?cod_rh=0001546334#secretos">Secretos empresariales</a></li>
+                                <li><a class="menu" href="https://scienti.minciencias.gov.co/cvlac/visualizador/generarCurriculoCv.do?cod_rh=0001546334#software">Software</a></li>
+                                <li><a class="menu" href="https://scienti.minciencias.gov.co/cvlac/visualizador/generarCurriculoCv.do?cod_rh=0001546334#tecnologicos">Productos tenológicos</a></li>
+                                <li><a class="menu" href="https://scienti.minciencias.gov.co/cvlac/visualizador/generarCurriculoCv.do?cod_rh=0001546334#procesos">Procesos o técnicas</a></li>
+                                <li><a class="menu" href="https://scienti.minciencias.gov.co/cvlac/visualizador/generarCurriculoCv.do?cod_rh=0001546334#trabajos_tec">Trabajos técnicos</a></li>
+                                <li><a class="menu" href="https://scienti.minciencias.gov.co/cvlac/visualizador/generarCurriculoCv.do?cod_rh=0001546334#normas">Normas y Regulaciones</a></li>
+                                <li><a class="menu" href="https://scienti.minciencias.gov.co/cvlac/visualizador/generarCurriculoCv.do?cod_rh=0001546334#otra_prod_tecnica">Otra producción técnica</a></li>
+                                <li><a class="menu" href="https://scienti.minciencias.gov.co/cvlac/visualizador/generarCurriculoCv.do?cod_rh=0001546334#base_tecnologica">Empresas de base tecnologica</a></li>
+                            </ul>
+
+                        </li>	
+                        <li><a class="menu" href="https://scienti.minciencias.gov.co/cvlac/visualizador/generarCurriculoCv.do?cod_rh=0001546334#" style="width:100px">Más información</a>
+
+                            <ul>
+                                <li><a class="menu" href="https://scienti.minciencias.gov.co/cvlac/visualizador/generarCurriculoCv.do?cod_rh=0001546334#demas_trabajos">Demás Trabajos</a></li>
+                                <li><a class="menu" href="https://scienti.minciencias.gov.co/cvlac/visualizador/generarCurriculoCv.do?cod_rh=0001546334#proyectos">Proyectos</a></li>
+                            </ul>
+
+                        </li>
+                        <li><a class="menu" href="https://scienti.minciencias.gov.co/cvlac/visualizador/generarCurriculoCv.do?cod_rh=0001546334#" style="width:110px">Producción en arte</a>
+
+                            <ul>
+                                <li><a class="menu" href="https://scienti.minciencias.gov.co/cvlac/visualizador/generarCurriculoCv.do?cod_rh=0001546334#obras_productos">Obras o productos</a></li>
+                                <li><a class="menu" href="https://scienti.minciencias.gov.co/cvlac/visualizador/generarCurriculoCv.do?cod_rh=0001546334#registros_acuerdo">Registros de acuerdo de licencia</a></li>
+                                <li><a class="menu" href="https://scienti.minciencias.gov.co/cvlac/visualizador/generarCurriculoCv.do?cod_rh=0001546334#crea_cul">Industrias Creativas y culturales</a></li>
+                                <li><a class="menu" href="https://scienti.minciencias.gov.co/cvlac/visualizador/generarCurriculoCv.do?cod_rh=0001546334#even_art">Evento artistico</a></li>
+                                <li><a class="menu" href="https://scienti.minciencias.gov.co/cvlac/visualizador/generarCurriculoCv.do?cod_rh=0001546334#talleres">Talleres creativos</a></li>
+                            </ul>
+
+                        </li>
+                        <li><a class="menu" href="https://scienti.minciencias.gov.co/cvlac/visualizador/generarCurriculoCv.do?cod_rh=0001546334#" style="width:60px;">Buscar</a><!--[if IE 7]><!--><!--<![endif]-->
+
+                            <ul>
+
+                                <li>
+                                    <form style="margin:0px;" name="search" onsubmit="return findInPage(this.string.value);" method="get">
+                                        <input name="string" type="text" onchange="n = 0;"><br>
+                                        <input type="submit" value="Buscar" name="search">
+                                    </form>
+                                </li>
+                            </ul>
+
+                        </li>				
+                    </ul>		
+                </div>
+            </div>
+
+            <div class="sep">&nbsp;</div>
+            <div class="container">
+                <table with="100%">   
+                    <tbody><tr><td><h3 align="center"><font size="3">Hoja de vida</font></h3></td></tr>
+                    <tr>        
+                        <td width="100%"><a name="datos_generales"></a>
+                            <table width="100%" style="border:#999 1px solid">                    
+                                
+                                <tbody><tr>    
+                                    <td colspan="2" class="messageText"><b>Par evaluador reconocido por Minciencias.</b></td>                            
+                                </tr>                        
+                                
+                                
+                                    <tr>
+                                        <td>Categoría</td>
+                                        <td>
+                                            Investigador Junior (IJ) con vigencia
+                                    
+                                        hasta la publicación de los resultados de la siguiente convocatoria
+                                        
+                                    
+                                    </td>
+                                    </tr>
+                                 
+                                <tr>
+                                    <td>Nombre</td>
+                                    <td>
+                                        JOSE ALONSO&nbsp;OVIEDO&nbsp;MONROY
+                                    </td>            
+                                </tr>
+
+                                <tr>           
+                                    <td>Nombre en citaciones</td>
+                                    <td>OVIEDO MONROY, JOSE ALONSO</td>
+                                </tr>        
+                                <tr>
+                                    <td>Documento identidad</td>
+                                    <td>
+                                        Cédula de ciudadanía
+                                        2230822                                
+                                    </td>
+                                </tr>
+                                <tr>            
+                                    <td>Nacionalidad</td>
+                                    <td>Colombiana</td>            
+                                </tr> 
+                                <tr>
+                                    <td>Fecha y lugar de nacimiento</td>
+                                    <td>
+                                        1981-04-02 00:00:00.0                                                    
+                                        &nbsp; - Colombia                                
+                                        &nbsp;IBAGUÉ                
+                                    </td>
+                                </tr>        
+                                <tr>            
+                                    <td>Sexo</td>
+                                    <td>Masculino</td>            
+                                </tr>
+                            </tbody></table>
+                            </td>
+                    </tr>   
+
+                    <!--INICIO REDES -->
+                    <tr>
+                        <td width="100%"><a name="redes_identificadoes"></a></td>
+                    </tr>
+
+                    <!--                FIN REDES-->
+
+                    <!--INICIO IDENTIFICADORES -->
+                    <tr>
+                        <td width="100%"><a name="red_identificadores"></a>
+                            <table width="100%" style="border:#999 1px solid">
+                                <tbody><tr>
+                                    <td><h3>Identificadores de autor</h3></td>
+                                </tr>
+                                    
+                                <tr>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        
+                                        <a target="_blank" href="https://orcid.org/0000-0003-1199-0583" style="color: #007A81">Open Researcher and Contributor ID (ORCID)</a>
+                                    </td>
+                                </tr>
+                                
+                            </tbody></table>
+                            </td>
+                    </tr>
+
+                    <!--                FIN IDENTIFICADORES-->
+
+                    <tr>        
+                        <td width="100%"><a name="direccion"></a>
+                            <table width="100%" style="border:#999 1px solid">
+                                    
+                                <tbody><tr>
+                                    <td><h3 align="center">Dirección Profesional</h3></td>
+                                </tr>   
+                                <tr>
+                                    <td>Institución</td>                    
+                                    <td>Servicio Nacional de Aprendizaje Sena Regional Tolima</td>                        
+                                </tr>               
+                                <tr>                
+                                    <td>Dirección</td>                    
+                                    <td>Cra. 4a. Estadio Calle 44 Av Ferrocarril </td>                        
+                                </tr>               
+                                <tr>            
+                                    <td>Barrio</td>
+                                    <td></td>            
+                                </tr>    
+                                <tr>            
+                                    <td>Teléfono</td>
+                                    <td>2709600</td>            
+                                </tr>   
+                                <tr>            
+                                    <td>E-mail institucional</td>
+                                    <td>jaoviedom@sena.edu.co</td>            
+                                </tr>
+                                
+                            </tbody></table>        
+
+                            <table width="100%" style="border:#999 1px solid">    
+                                
+
+                                <tbody><tr>
+                                    <td><h3 align="center">Dirección Residencial</h3></td>
+                                </tr>     
+                                <tr>
+                                    <td>Dirección</td>
+                                    <td>CALLE 93 # 20-40s Torre 5 Apto 1706 Conjunto Mirador de los Andes</td>
+                                </tr>       
+                                <tr>
+                                    <td>Barrio</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>Municipio</td>
+                                    <td>IBAGUÉ</td>
+                                </tr>    
+                                <tr>
+                                    <td>Teléfono</td>
+                                    <td>7526197</td>
+                                </tr>
+                                <tr>
+                                    <td>E-mail personal</td>
+                                    <td>joseoviedo777@msn.com</td>
+                                </tr>    
+                                
+                            </tbody></table>
+                        </td>
+                    </tr>    
+                    <tr>        
+                        <td width="100%"><a name="formacion_acad"></a>
+                            <table width="100%" style="border:#999 1px solid">
+                                <tbody><tr>
+                                    <td colspan="2"><h3>Formación Académica</h3></td>
+                                </tr>   
+                                
+                                <tr>
+                                    <td><li>&nbsp;</li></td>    
+                        <td><b>Maestría/Magister</b>
+                            UNIVERSIDAD DE IBAGUÉ<br>
+                            INGENIERIA INDUSTRIAL<br>
+                            Agosto de 2012 
+                            
+                            - Julio de 2016<br>
+                            
+                            Diseño de estrategias de mejora del servicio al cliente en la clínica Asotrauma</td>
+                    </tr>
+                    
+                                <tr>
+                                    <td><li>&nbsp;</li></td>    
+                        <td><b>Pregrado/Universitario</b>
+                            UNIVERSIDAD DE IBAGUÉ<br>
+                            INGENIERIA ELECTRONICA<br>
+                            Febrero de 1998 
+                            
+                            - Diciembre de 2004<br>
+                            
+                            DISEÑO Y CONSTRUCCIÓN DE UN EQUIPO PARA EL DIAGNÓSTICO DE ARRITMIAS CARDIACAS</td>
+                    </tr>
+                    
+                </tbody></table>
+                
+                </td>
+                </tr>    
+                <tr>        
+                    <td width="100%"><a name="formacion_comp"></a>
+                </td>
+                </tr>  
+
+                <tr>        
+                    <td width="100%"><a name="estancias_posdoctorales"></a>
+                </td>
+                </tr> 
+
+                <tr>        
+                    <td width="100%"><a name="experiencia"></a>
+                        <table width="100%" style="border:#999 1px solid">
+                            <tbody><tr>
+                                <td colspan="2"><h3>Experiencia profesional</h3></td>
+                            </tr>
+                            
+                            <tr>
+                                <td><li>&nbsp;</li></td>        
+                    <td>            
+                        <b>SERVICIO NACIONAL DE APRENDIZAJE SENA</b><br>                      
+                        <i>Dedicación: </i>60&nbsp;horas Semanales<br>
+                        Desde: Diciembre de 2017            
+                        
+                        <br><br>
+                                    
+                        
+                        
+                        
+                    </td>
+                </tr>
+                
+                            <tr>
+                                <td><li>&nbsp;</li></td>        
+                    <td>            
+                        <b>Servicio Nacional de Aprendizaje Sena Regional Tolima</b><br>                      
+                        <i>Dedicación: </i>40&nbsp;horas Semanales<br>
+                        Desde: Febrero de 2010            
+                        
+                        Hasta: Diciembre de 2016   
+                        
+                        <br><br>
+                                    
+                        
+                        <span class="blueTitle">Actividades de docencia</span><br>
+                                       
+                        - &nbsp;
+                        Capacitación/Entrenamientos dictados            
+                        <i> - Nombre del curso:</i>&nbsp; TECNOLOGÍA EN ANÁLISIS Y DESARROLLO DE SISTEMAS DE INFORMACIÓN ,&nbsp;40 
+                        Febrero 2010        
+                        
+                         
+                        
+                        <br>
+                        
+                        
+                        
+                    </td>
+                </tr>
+                
+                </tbody></table>
+                
+                </td>
+                </tr>   
+                <tr>        
+                    <td width="100%"><a name="otra_info_personal"></a>
+                        <table width="100%" style="border:#999 1px solid">
+                            <tbody><tr>
+                                <td><h3>Áreas de actuación</h3></td>
+                            </tr>        
+                                   
+                            <tr>
+                                <td><li>&nbsp;Ingeniería y Tecnología -- Ingenierías Eléctrica, Electrónica e Informática -- Ingeniería de Sistemas y Comunicaciones</li></td>
+                </tr>            
+                       
+                            <tr>
+                                <td><li>&nbsp;Ingeniería y Tecnología -- Otras Ingenierías y Tecnologías -- Ingeniería Industrial</li></td>
+                </tr>            
+                
+                </tbody></table>
+                </td>
+                </tr>
+
+                <tr>        
+                    <td width="100%">
+                        <table width="100%" style="border:#999 1px solid">
+                            <tbody><tr>
+                                <td colspan="5"><h3>Idiomas</h3></td>
+                            </tr>    
+                            <tr>
+                                <td>&nbsp;</td>
+                                <td><b>Habla</b></td>
+                                <td><b>Escribe</b></td>
+                                <td><b>Lee</b></td>
+                                <td><b>Entiende</b></td>
+                            </tr>
+                            
+                            <tr>
+                                <td><li>&nbsp;Inglés</li></td>
+                    <td>Bueno</td>
+                    <td>Bueno</td>
+                    <td>Bueno</td>
+                    <td>Bueno</td>                                                        
+                </tr>    
+                
+                </tbody></table>
+                </td>
+                </tr>
+
+                <tr>        
+                    <td width="100%">
+                        <table width="100%" style="border:#999 1px solid">
+                            <tbody><tr>
+                                <td><h3>Líneas de investigación</h3></td>
+                            </tr>
+                                    
+                            <tr>
+                                <td><li>&nbsp;Gestión Informática, virtualización e innovación tecnológica, <i>Activa:</i>Si</li></td>
+                </tr>        
+                
+                </tbody></table>
+                </td>
+                </tr>
+                <tr>        
+                    <td width="100%">
+
+                        <table width="100%" style="border:#999 1px solid">
+                            <tbody><tr>
+                                <td><h3>Reconocimientos</h3></td>
+                            </tr>
+                                
+                            <tr>
+                                <td><li>Best presentation of INNODOCT 2018. International Conference on Innovation, Documentation and Education ,Universidad Politécnica de Valencia - Noviembrede 2018</li></td>
+                </tr>
+                
+                </tbody></table>
+                </td>
+                </tr>
+                <tr>
+                    <td width="100%" align="right">&nbsp;</td>
+                </tr>
+                <tr>
+                    <td><blockquote class="fillText">Los ítems de producción con la marca  <img src="./CvLAC - RG_files/chulo.jpg" height="15px" width="15px"> corresponden a productos avalados y validados para la última <i>Convocatoria Nacional para el Reconocimiento y Medición de Grupos de Investigación, Desarrollo Tecnológico o de Innovación y para el Reconocimiento de Investigadores del SNCTeI</i></blockquote></td>
+                </tr>
+                <tr>        
+                    <td width="100%"><a name="asesorias"></a></td>
+                </tr>
+                <tr>        
+                    <td width="100%"><a name="curso_corta_du"></a>
+                        <table width="100%" style="border:#999 1px solid">
+                            <tbody><tr>
+                                <td><h3>Cursos de corta duración</h3></td>
+                            </tr>
+                                
+                            <tr>
+                                <td><li><b>Producción técnica - Cursos de corta duración dictados - Otro</b></li></td>
+                </tr>
+                <tr>
+                    <td>
+                        <blockquote>
+                                                
+                            JOSE ALONSO OVIEDO MONROY,                    
+                                            
+                            FUNDAMENTOS DE INFORMÁTICA,
+                            <i>Finalidad: </i>Capacitar al aprendiz en fundamentos de informática
+                            . En: Colombia&nbsp;
+                            ,2017,&nbsp;
+                            ,SENA REGIONAL TOLIMA CENTRO DE COMERCIO Y SERVICIOS.&nbsp;
+                            participación: Docente
+                            ,&nbsp;4 semanas&nbsp;
+                            
+                            
+                            
+                                           
+                            <br><b>Areas: </b><br>
+                                                    
+                            Ingeniería y Tecnología -- Ingenierías Eléctrica, Electrónica e Informática -- Ingeniería de Sistemas y Comunicaciones,                    
+                            
+                            
+                             
+                        </blockquote>
+                    </td>
+                </tr>
+                    
+                            <tr>
+                                <td><li><b>Producción técnica - Cursos de corta duración dictados - Otro</b></li></td>
+                </tr>
+                <tr>
+                    <td>
+                        <blockquote>
+                                                
+                            JOSE ALONSO OVIEDO MONROY,                    
+                                            
+                            Excel básico,
+                            <i>Finalidad: </i>Capacitar al aprendiz en las herramientas básicas de excel
+                            . En: Colombia&nbsp;
+                            ,2016,&nbsp;
+                            ,SENA REGIONAL TOLIMA CENTRO DE COMERCIO Y SERVICIOS.&nbsp;
+                            participación: Docente
+                            ,&nbsp;4 semanas&nbsp;
+                            
+                            
+                            
+                                           
+                            <br><b>Areas: </b><br>
+                                                    
+                            Ingeniería y Tecnología -- Ingenierías Eléctrica, Electrónica e Informática -- Ingeniería de Sistemas y Comunicaciones,                    
+                            
+                            
+                             
+                        </blockquote>
+                    </td>
+                </tr>
+                    
+                            <tr>
+                                <td><li><b>Producción técnica - Cursos de corta duración dictados - Otro</b></li></td>
+                </tr>
+                <tr>
+                    <td>
+                        <blockquote>
+                                                
+                            JOSE ALONSO OVIEDO MONROY,                    
+                                            
+                            Word avanzado,
+                            <i>Finalidad: </i>Capacitar al aprendiz en las herramientas avanzadas de word
+                            . En: Colombia&nbsp;
+                            ,2016,&nbsp;
+                            ,SENA REGIONAL TOLIMA CENTRO DE COMERCIO Y SERVICIOS.&nbsp;
+                            participación: Docente
+                            ,&nbsp;4 semanas&nbsp;
+                            
+                            
+                            
+                                           
+                            <br><b>Areas: </b><br>
+                                                    
+                            Ingeniería y Tecnología -- Ingenierías Eléctrica, Electrónica e Informática -- Ingeniería de Sistemas y Comunicaciones,                    
+                            
+                            
+                             
+                        </blockquote>
+                    </td>
+                </tr>
+                    
+                            <tr>
+                                <td><li><b>Producción técnica - Cursos de corta duración dictados - Extensión extracurricular</b></li></td>
+                </tr>
+                <tr>
+                    <td>
+                        <blockquote>
+                                                
+                            JOSE ALONSO OVIEDO MONROY,                    
+                                            
+                            DESARROLLO DE APLICACIONES PARA DISPOSITIVOS MOVILES CON PLATAFORMA ANDROID,
+                            <i>Finalidad: </i>Introducir al aprendiz en el desarrollo de aplicaciones móviles para dispositivos móviles con sistema operativo android
+                            . En: Colombia&nbsp;
+                            ,2016,&nbsp;
+                            ,SENA REGIONAL TOLIMA CENTRO DE COMERCIO Y SERVICIOS.&nbsp;
+                            participación: Docente
+                            ,&nbsp;8 semanas&nbsp;
+                            
+                            
+                            
+                                           
+                            <br><b>Areas: </b><br>
+                                                    
+                            Ingeniería y Tecnología -- Ingenierías Eléctrica, Electrónica e Informática -- Ingeniería de Sistemas y Comunicaciones,                    
+                            
+                            
+                             
+                        </blockquote>
+                    </td>
+                </tr>
+                    
+                            <tr>
+                                <td><li><b>Producción técnica - Cursos de corta duración dictados - Otro</b></li></td>
+                </tr>
+                <tr>
+                    <td>
+                        <blockquote>
+                                                
+                            JOSE ALONSO OVIEDO MONROY,                    
+                                            
+                            Excel avanzado,
+                            <i>Finalidad: </i>Capacitar al aprendiz en las herramientas avanzadas de excel
+                            . En: Colombia&nbsp;
+                            ,2016,&nbsp;
+                            ,SENA REGIONAL TOLIMA CENTRO DE COMERCIO Y SERVICIOS.&nbsp;
+                            participación: Docente
+                            ,&nbsp;0 semanas&nbsp;
+                            
+                            
+                            
+                                           
+                            <br><b>Areas: </b><br>
+                                                    
+                            Ingeniería y Tecnología -- Ingenierías Eléctrica, Electrónica e Informática -- Ingeniería de Sistemas y Comunicaciones,                    
+                            
+                            
+                             
+                        </blockquote>
+                    </td>
+                </tr>
+                    
+                            <tr>
+                                <td><li><b>Producción técnica - Cursos de corta duración dictados - Otro</b></li></td>
+                </tr>
+                <tr>
+                    <td>
+                        <blockquote>
+                                                
+                            JOSE ALONSO OVIEDO MONROY,                    
+                                            
+                            Windows básico,
+                            <i>Finalidad: </i>Capacitar al aprendiz en las herramientas básicas de windows
+                            . En: Colombia&nbsp;
+                            ,2016,&nbsp;
+                            ,SENA REGIONAL TOLIMA CENTRO DE COMERCIO Y SERVICIOS.&nbsp;
+                            participación: Docente
+                            ,&nbsp;0 semanas&nbsp;
+                            
+                            
+                            
+                                           
+                            <br><b>Areas: </b><br>
+                                                    
+                            Ingeniería y Tecnología -- Ingenierías Eléctrica, Electrónica e Informática -- Ingeniería de Sistemas y Comunicaciones,                    
+                            
+                            
+                             
+                        </blockquote>
+                    </td>
+                </tr>
+                    
+                            <tr>
+                                <td><li><b>Producción técnica - Cursos de corta duración dictados - Otro</b></li></td>
+                </tr>
+                <tr>
+                    <td>
+                        <blockquote>
+                                                
+                            JOSE ALONSO OVIEDO MONROY,                    
+                                            
+                            HERRAMIENTAS OFIMATICAS I,
+                            <i>Finalidad: </i>Capacitar al aprendiz en las herramientas ofimáticas básicas
+                            . En: Colombia&nbsp;
+                            ,2016,&nbsp;
+                            ,SENA REGIONAL TOLIMA CENTRO DE COMERCIO Y SERVICIOS.&nbsp;
+                            participación: Docente
+                            ,&nbsp;0 semanas&nbsp;
+                            
+                            
+                            
+                                           
+                            <br><b>Areas: </b><br>
+                                                    
+                            Ingeniería y Tecnología -- Ingenierías Eléctrica, Electrónica e Informática -- Ingeniería de Sistemas y Comunicaciones,                    
+                            
+                            
+                             
+                        </blockquote>
+                    </td>
+                </tr>
+                    
+                            <tr>
+                                <td><li><b>Producción técnica - Cursos de corta duración dictados - Otro</b></li></td>
+                </tr>
+                <tr>
+                    <td>
+                        <blockquote>
+                                                
+                            JOSE ALONSO OVIEDO MONROY,                    
+                                            
+                            APLICACION DE HERRAMIENTAS OFIMATICAS CON MICROSOFT EXCEL EN EL ENTORNO LABORAL,
+                            <i>Finalidad: </i>Capacitar a los aprendices en las funciones básicas de excel que se utilizan en el entorno laboral
+                            . En: Colombia&nbsp;
+                            ,2016,&nbsp;
+                            ,SENA REGIONAL TOLIMA CENTRO DE COMERCIO Y SERVICIOS.&nbsp;
+                            participación: Docente
+                            ,&nbsp;4 semanas&nbsp;
+                            
+                            
+                            
+                                           
+                            <br><b>Areas: </b><br>
+                                                    
+                            Ingeniería y Tecnología -- Ingenierías Eléctrica, Electrónica e Informática -- Ingeniería de Sistemas y Comunicaciones,                    
+                            
+                            
+                             
+                        </blockquote>
+                    </td>
+                </tr>
+                    
+                            <tr>
+                                <td><li><b>Producción técnica - Cursos de corta duración dictados - Otro</b></li></td>
+                </tr>
+                <tr>
+                    <td>
+                        <blockquote>
+                                                
+                            JOSE ALONSO OVIEDO MONROY,                    
+                                            
+                            CIENCIAS BASICAS EN MATEMATICAS Y FISICA,
+                            <i>Finalidad: </i>Capacitar al aprendiz en temas básicos de matemáticas como solución de ecuaciones de primer grado entre otras
+                            . En: Colombia&nbsp;
+                            ,2016,&nbsp;
+                            ,SENA REGIONAL TOLIMA CENTRO DE COMERCIO Y SERVICIOS.&nbsp;
+                            participación: Docente
+                            ,&nbsp;4 semanas&nbsp;
+                            
+                            
+                            
+                                           
+                            <br><b>Areas: </b><br>
+                                                    
+                            Ingeniería y Tecnología -- Ingenierías Eléctrica, Electrónica e Informática -- Ingeniería de Sistemas y Comunicaciones,                    
+                            
+                            
+                             
+                        </blockquote>
+                    </td>
+                </tr>
+                    
+                            <tr>
+                                <td><li><b>Producción técnica - Cursos de corta duración dictados - Otro</b></li></td>
+                </tr>
+                <tr>
+                    <td>
+                        <blockquote>
+                                                
+                            JOSE ALONSO OVIEDO MONROY,                    
+                                            
+                            EXCEL INTERMEDIO,
+                            <i>Finalidad: </i>Capacitar al aprendiz en las herramientas intermedias de excel
+                            . En: Colombia&nbsp;
+                            ,2016,&nbsp;
+                            ,SENA REGIONAL TOLIMA CENTRO DE COMERCIO Y SERVICIOS.&nbsp;
+                            participación: Docente
+                            ,&nbsp;4 semanas&nbsp;
+                            
+                            
+                            
+                                           
+                            <br><b>Areas: </b><br>
+                                                    
+                            Ingeniería y Tecnología -- Ingenierías Eléctrica, Electrónica e Informática -- Ingeniería de Sistemas y Comunicaciones,                    
+                            
+                            
+                             
+                        </blockquote>
+                    </td>
+                </tr>
+                    
+                            <tr>
+                                <td><li><b>Producción técnica - Cursos de corta duración dictados - Extensión extracurricular</b></li></td>
+                </tr>
+                <tr>
+                    <td>
+                        <blockquote>
+                                                
+                            JOSE ALONSO OVIEDO MONROY,                    
+                                            
+                            APLICACION DE HERRAMIENTAS METODOLOGICAS EN INVESTIGACION: PROCESOS DE CIENCIA, TECNOLOGIA E INNOVACION,
+                            <i>Finalidad: </i>Capacitar al aprendiz en las herramientas básicas de investigación
+                            . En: Colombia&nbsp;
+                            ,2016,&nbsp;
+                            ,SENA REGIONAL TOLIMA CENTRO DE COMERCIO Y SERVICIOS.&nbsp;
+                            participación: Docente
+                            ,&nbsp;0 semanas&nbsp;
+                            
+                            
+                            
+                                           
+                            <br><b>Areas: </b><br>
+                                                    
+                            Ingeniería y Tecnología -- Ingenierías Eléctrica, Electrónica e Informática -- Ingeniería de Sistemas y Comunicaciones,                    
+                            
+                            
+                             
+                        </blockquote>
+                    </td>
+                </tr>
+                    
+                            <tr>
+                                <td><li><b>Producción técnica - Cursos de corta duración dictados - Otro</b></li></td>
+                </tr>
+                <tr>
+                    <td>
+                        <blockquote>
+                                                
+                            JOSE ALONSO OVIEDO MONROY,                    
+                                            
+                            Word básico,
+                            <i>Finalidad: </i>Capacitar al aprendiz en las herramientas básicas de word
+                            . En: Colombia&nbsp;
+                            ,2016,&nbsp;
+                            ,SENA REGIONAL TOLIMA CENTRO DE COMERCIO Y SERVICIOS.&nbsp;
+                            participación: Docente
+                            ,&nbsp;4 semanas&nbsp;
+                            
+                            
+                            
+                                           
+                            <br><b>Areas: </b><br>
+                                                    
+                            Ingeniería y Tecnología -- Ingenierías Eléctrica, Electrónica e Informática -- Ingeniería de Sistemas y Comunicaciones,                    
+                            
+                            
+                             
+                        </blockquote>
+                    </td>
+                </tr>
+                
+                </tbody></table>
+                </td>
+                </tr>
+                    
+                <tr>
+                    <td width="100%"><a name="trabajos_dirigi"></a></td>
+                </tr> 
+                <tr>
+                    <td width="100%" align="right">&nbsp;</td>
+                </tr>
+
+                
+                <tr>
+                    <td width="100%"><a name="jurado"></a>
+                        <table width="100%" style="border:#999 1px solid">
+                            <tbody><tr>
+                                <td><h3>Jurado en comités de evaluación</h3></td>
+                            </tr>
+                                
+                            <tr>
+                                <td><li><b>Datos complementarios - Jurado/Comisiones evaluadoras de trabajo de grado - Maestría </b></li></td>
+                </tr>
+                <tr>
+                    <td>
+                        <blockquote>
+                                                
+                            JOSE ALONSO OVIEDO MONROY,                    
+                            
+                            <i>Titulo:&nbsp;</i>Modelo de implementación para la integración de los requisitos estipulados en las normas ISO 9001:2015 e ISO/IEC 17025:2017 en un laboratorio de suelos, asfaltos y concretos; que incluye las herramientas de calidad y técnicas    
+                            <i>Tipo de trabajo presentado:&nbsp;</i>Trabajo de grado/tesis    
+                            <i>en:&nbsp;</i> UNIVERSIDAD DE IBAGUÉ&nbsp;
+                            <i>programa académico</i> MAESTRÍA EN GERENCIA DE LA CALIDAD&nbsp;
+                            <i>Nombre del orientado:&nbsp;</i>Jeison Arled Osorio Marín &nbsp;                
+                            
+                            
+                            
+                                           
+                            <br><b>Areas: </b><br>
+                                                    
+                            Ingeniería y Tecnología -- Otras Ingenierías y Tecnologías -- Ingeniería Industrial,                    
+                            
+                            
+                            
+
+                        </blockquote>
+                    </td>
+                </tr>
+                
+                </tbody></table>
+                </td>
+                </tr>
+                <tr>
+                    <td width="100%"><a name="comite"></a></td>
+                </tr>
+                <tr>
+                    <td><a name="par"></a>    <table width="100%" style="border:#999 1px solid">
+                            <tbody><tr>
+                                <td><h3>Par evaluador</h3></td>
+                            </tr>
+                                
+                            <tr>
+                                <td>
+                                    <blockquote>
+                                        <i>Ámbito: </i>Nacional&nbsp;
+                                        <i>Par evaluador de: </i>Material para publicación científica&nbsp;
+                                        
+                                        <i>Revista: </i>Vía Innova,&nbsp;
+                                        
+                                        2018,&nbsp;
+                                        Octubre &nbsp;
+                                    </blockquote>                    
+                                </td>                         
+                            </tr>            
+                                
+                            <tr>
+                                <td>
+                                    <blockquote>
+                                        <i>Ámbito: </i>Nacional&nbsp;
+                                        <i>Par evaluador de: </i>Proyecto&nbsp;
+                                        
+                                        <i>Institución: </i>Fundacion Red Colombiana de Semilleros de Investigacion RedColsi -  Nodo Bucaramanga,&nbsp;                
+                                        
+                                        2018,&nbsp;
+                                        Mayo &nbsp;
+                                    </blockquote>                    
+                                </td>                         
+                            </tr>            
+                                
+                            <tr>
+                                <td>
+                                    <blockquote>
+                                        <i>Ámbito: </i>Nacional&nbsp;
+                                        <i>Par evaluador de: </i>Proyecto&nbsp;
+                                        
+                                        <i>Institución: </i>Fundacion Red Colombiana de Semilleros de Investigacion RedColsi -  Nodo Bucaramanga,&nbsp;                
+                                        
+                                        2018,&nbsp;
+                                        Mayo &nbsp;
+                                    </blockquote>                    
+                                </td>                         
+                            </tr>            
+                                
+                            <tr>
+                                <td>
+                                    <blockquote>
+                                        <i>Ámbito: </i>Nacional&nbsp;
+                                        <i>Par evaluador de: </i>Material para publicación científica&nbsp;
+                                        
+                                        <i>Revista: </i>Vía Innova,&nbsp;
+                                        
+                                        2017,&nbsp;
+                                        Octubre &nbsp;
+                                    </blockquote>                    
+                                </td>                         
+                            </tr>            
+                                
+                            <tr>
+                                <td>
+                                    <blockquote>
+                                        <i>Ámbito: </i>Nacional&nbsp;
+                                        <i>Par evaluador de: </i>Proyecto&nbsp;
+                                        
+                                        <i>Institución: </i>Fundacion Red Colombiana de Semilleros de Investigacion RedColsi -  Nodo Bucaramanga,&nbsp;                
+                                        
+                                        2018,&nbsp;
+                                        Mayo &nbsp;
+                                    </blockquote>                    
+                                </td>                         
+                            </tr>            
+                                
+                            <tr>
+                                <td>
+                                    <blockquote>
+                                        <i>Ámbito: </i>Nacional&nbsp;
+                                        <i>Par evaluador de: </i>Proyecto&nbsp;
+                                        
+                                        <i>Institución: </i>Fundacion Red Colombiana de Semilleros de Investigacion RedColsi -  Nodo Bucaramanga,&nbsp;                
+                                        
+                                        2018,&nbsp;
+                                        Mayo &nbsp;
+                                    </blockquote>                    
+                                </td>                         
+                            </tr>            
+                                    
+                        </tbody></table>    
+                        </td>
+                </tr>
+
+                
+                <!--Inicio Consultorias -->
+                <tr>       
+                    <td width="100%"></td>
+                </tr>
+                <!--Fin Consultorias-->
+                <tr>        
+                    <td width="100%"><a name="edicion"></a></td>
+                </tr>
+
+                <tr>        
+                    <td width="100%"><a name="evento"></a>
+                        <table width="100%" style="border:#999 1px solid">
+                            <tbody><tr>
+                                <td><h3>Eventos científicos</h3></td>
+                            </tr>
+                                
+                            <tr>
+                                <td> 
+                                    <table>           
+                                        <tbody><tr>
+                                            <td>
+                                                
+                                                <img src="./CvLAC - RG_files/chulo.jpg" height="15px" width="15px">
+                                                
+                                                <b>1</b>&nbsp;<i><b>Nombre del evento:&nbsp;</b></i>ERISE "Encuentro Regional de Investigadores, Semillero y Empresarios"&nbsp;
+                                                <i>Tipo de evento: </i>Encuentro&nbsp;
+                                                <i>Ámbito: </i>Nacional&nbsp;                
+                                                <i>Realizado el:2014-10-30 00:00:00.0,&nbsp;
+                                                    2014-10-31 00:00:00.0 &nbsp;
+                                                    en IBAGUÉ &nbsp; - Auditorio SENA REGIONAL TOLIMA  &nbsp;
+                                            </i></td>                         				
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                
+                                                <b>Productos asociados</b><br>
+                                                
+                                                <ul>
+                                                    <li><i>Nombre del producto:</i>Estudio del nivel de satisfacción percibida por los pacientes de la clínica asotrauma
+                                                        <i>Tipo de producto:</i>Producción técnica - Presentación de trabajo - Ponencia
+                                                    </li>
+                                                </ul>
+                                                
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                
+                                                <b>Instituciones asociadas</b><br>					
+                                                
+                                                <ul><li><i>Nombre de la institución:</i>SENA REGIONAL TOLIMA CENTRO DE COMERCIO Y SERVICIOS
+                                                        <i>Tipo de producto:</i>Patrocinadora</li></ul>
+                                                        
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                
+                                                <b>Participantes</b><br>
+                                                
+                                                <ul><li><i>Nombre: </i>JOSE ALONSO OVIEDO MONROY
+                                                        <i>Rol en el evento: </i>Ponente magistral
+                                                    </li>
+                                                </ul>
+                                                
+                                            </td>
+                                        </tr>
+                                    </tbody></table>    				  
+                                </td>                         				
+                            </tr>          
+                                
+                            <tr>
+                                <td> 
+                                    <table>           
+                                        <tbody><tr>
+                                            <td>
+                                                
+                                                <img src="./CvLAC - RG_files/chulo.jpg" height="15px" width="15px">
+                                                
+                                                <b>2</b>&nbsp;<i><b>Nombre del evento:&nbsp;</b></i>INNODOCT/18. International Conference on Innovation, Documentation and Education&nbsp;
+                                                <i>Tipo de evento: </i>Congreso&nbsp;
+                                                <i>Ámbito: </i>Internacional&nbsp;                
+                                                <i>Realizado el:2018-11-14 00:00:00.0,&nbsp;
+                                                    2018-11-16 00:00:00.0 &nbsp;
+                                                    en Valencia &nbsp; - Universidad Politécnica de Valencia &nbsp;
+                                            </i></td>                         				
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                
+                                                <b>Productos asociados</b><br>
+                                                
+                                                <ul>
+                                                    <li><i>Nombre del producto:</i>DEVELOPMENT OF AND APPLICATION FOR MOBILE DEVICES WITH AUGMENTED REALITY FOR THE TEACHING OF FRACTURE CHARACTERISTICS
+                                                        <i>Tipo de producto:</i>Producción técnica - Presentación de trabajo - Ponencia
+                                                    </li>
+                                                </ul>
+                                                
+                                                <ul>
+                                                    <li><i>Nombre del producto:</i>Development of an application for mobile devices with augmented reality for the teaching of fracture characteristics
+                                                        <i>Tipo de producto:</i>Producción bibliográfica - Trabajos en eventos (Capítulos de memoria) - Completo
+                                                    </li>
+                                                </ul>
+                                                
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                
+                                                <b>Instituciones asociadas</b><br>					
+                                                
+                                                <ul><li><i>Nombre de la institución:</i>SERVICIO NACIONAL DE APRENDIZAJE SENA
+                                                        <i>Tipo de producto:</i>Patrocinadora</li></ul>
+                                                        
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                
+                                                <b>Participantes</b><br>
+                                                
+                                                <ul><li><i>Nombre: </i>ANDRES ARCINIEGAS
+                                                        <i>Rol en el evento: </i>Ponente
+                                                    </li>
+                                                </ul>
+                                                
+                                                <ul><li><i>Nombre: </i>JOSE ALONSO OVIEDO MONROY
+                                                        <i>Rol en el evento: </i>Ponente
+                                                    </li>
+                                                </ul>
+                                                
+                                            </td>
+                                        </tr>
+                                    </tbody></table>    				  
+                                </td>                         				
+                            </tr>          
+                                
+                            <tr>
+                                <td> 
+                                    <table>           
+                                        <tbody><tr>
+                                            <td>
+                                                
+                                                <img src="./CvLAC - RG_files/chulo.jpg" height="15px" width="15px">
+                                                
+                                                <b>3</b>&nbsp;<i><b>Nombre del evento:&nbsp;</b></i>ERISE "Encuentro Regional de Investigadores, Semillero y Empresarios"&nbsp;
+                                                <i>Tipo de evento: </i>Encuentro&nbsp;
+                                                <i>Ámbito: </i>Nacional&nbsp;                
+                                                <i>Realizado el:2016-11-02 00:00:00.0,&nbsp;
+                                                    2016-11-03 00:00:00.0 &nbsp;
+                                                    en IBAGUÉ &nbsp; - Auditorio SENA REGIONAL TOLIMA  &nbsp;
+                                            </i></td>                         				
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                
+                                                <b>Productos asociados</b><br>
+                                                
+                                                <ul>
+                                                    <li><i>Nombre del producto:</i>Diseño de un Model Administrativo y Financiero para las Tiendas de Barrio de la Comuna 5 de la ciudad de Ibagué
+                                                        <i>Tipo de producto:</i>Producción técnica - Presentación de trabajo - Ponencia
+                                                    </li>
+                                                </ul>
+                                                
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                
+                                                <b>Instituciones asociadas</b><br>					
+                                                
+                                                <ul><li><i>Nombre de la institución:</i>Servicio Nacional de Aprendizaje Sena Regional Tolima
+                                                        <i>Tipo de producto:</i>Patrocinadora</li></ul>
+                                                        
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                
+                                                <b>Participantes</b><br>
+                                                
+                                                <ul><li><i>Nombre: </i>JOSE ALONSO OVIEDO MONROY
+                                                        <i>Rol en el evento: </i>Ponente magistral
+                                                    </li>
+                                                </ul>
+                                                
+                                            </td>
+                                        </tr>
+                                    </tbody></table>    				  
+                                </td>                         				
+                            </tr>          
+                                
+                            <tr>
+                                <td> 
+                                    <table>           
+                                        <tbody><tr>
+                                            <td>
+                                                
+                                                <img src="./CvLAC - RG_files/chulo.jpg" height="15px" width="15px">
+                                                
+                                                <b>4</b>&nbsp;<i><b>Nombre del evento:&nbsp;</b></i>IV ERISE "Encuentro Regional de Investigadores, Semillero y Empresarios"&nbsp;
+                                                <i>Tipo de evento: </i>Encuentro&nbsp;
+                                                <i>Ámbito: </i>Nacional&nbsp;                
+                                                <i>Realizado el:2017-11-16 00:00:00.0,&nbsp;
+                                                    2017-11-17 00:00:00.0 &nbsp;
+                                                    en IBAGUÉ &nbsp; - Centro de Comercio y Servicios Sena Tolima &nbsp;
+                                            </i></td>                         				
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                
+                                                <b>Productos asociados</b><br>
+                                                
+                                                <ul>
+                                                    <li><i>Nombre del producto:</i>CAPAF: Un sistema para el control de acceso a ambientes de formación
+                                                        <i>Tipo de producto:</i>Producción técnica - Presentación de trabajo - Ponencia
+                                                    </li>
+                                                </ul>
+                                                
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                
+                                                <b>Instituciones asociadas</b><br>					
+                                                
+                                                <ul><li><i>Nombre de la institución:</i>SERVICIO NACIONAL DE APRENDIZAJE SENA
+                                                        <i>Tipo de producto:</i>Patrocinadora</li></ul>
+                                                        
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                
+                                                <b>Participantes</b><br>
+                                                
+                                                <ul><li><i>Nombre: </i>JOSE ALONSO OVIEDO MONROY
+                                                        <i>Rol en el evento: </i>Ponente
+                                                    </li>
+                                                </ul>
+                                                
+                                            </td>
+                                        </tr>
+                                    </tbody></table>    				  
+                                </td>                         				
+                            </tr>          
+                                
+                            <tr>
+                                <td> 
+                                    <table>           
+                                        <tbody><tr>
+                                            <td>
+                                                
+                                                <b>5</b>&nbsp;<i><b>Nombre del evento:&nbsp;</b></i>Congreso Internacional de Investigación Teinnova&nbsp;
+                                                <i>Tipo de evento: </i>Congreso&nbsp;
+                                                <i>Ámbito: </i>Internacional&nbsp;                
+                                                <i>Realizado el:2017-09-28 00:00:00.0,&nbsp;
+                                                    2017-09-29 00:00:00.0 &nbsp;
+                                                    en PEREIRA &nbsp; - Hotel Movich &nbsp;
+                                            </i></td>                         				
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                
+                                                <b>Productos asociados</b><br>
+                                                
+                                                <ul>
+                                                    <li><i>Nombre del producto:</i>SENA MARKET: UNA APLICACIÓN MÓVIL PARA LA ADMINISTRACIÓN DE TIENDAS
+                                                        <i>Tipo de producto:</i>Producción técnica - Presentación de trabajo - Ponencia
+                                                    </li>
+                                                </ul>
+                                                
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                
+                                                <b>Instituciones asociadas</b><br>					
+                                                
+                                                <ul><li><i>Nombre de la institución:</i>SERVICIO NACIONAL DE APRENDIZAJE SENA
+                                                        <i>Tipo de producto:</i>Patrocinadora</li></ul>
+                                                        
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                
+                                                <b>Participantes</b><br>
+                                                
+                                                <ul><li><i>Nombre: </i>JOSE ALONSO OVIEDO MONROY
+                                                        <i>Rol en el evento: </i>Ponente
+                                                    </li>
+                                                </ul>
+                                                
+                                            </td>
+                                        </tr>
+                                    </tbody></table>    				  
+                                </td>                         				
+                            </tr>          
+                                
+                            <tr>
+                                <td> 
+                                    <table>           
+                                        <tbody><tr>
+                                            <td>
+                                                
+                                                <img src="./CvLAC - RG_files/chulo.jpg" height="15px" width="15px">
+                                                
+                                                <b>6</b>&nbsp;<i><b>Nombre del evento:&nbsp;</b></i>Congreso Internacional de Investigación e Innovación 2018&nbsp;
+                                                <i>Tipo de evento: </i>Congreso&nbsp;
+                                                <i>Ámbito: </i>Internacional&nbsp;                
+                                                <i>Realizado el:2018-04-19 00:00:00.0,&nbsp;
+                                                    2018-04-20 00:00:00.0 &nbsp;
+                                                    en Cortazar &nbsp; - Universidad Centro de Estudios Cortazar &nbsp;
+                                            </i></td>                         				
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                
+                                                <b>Productos asociados</b><br>
+                                                
+                                                <ul>
+                                                    <li><i>Nombre del producto:</i>Desarrollo de un sistema de control de acceso para ambientes de formación
+                                                        <i>Tipo de producto:</i>Producción técnica - Presentación de trabajo - Ponencia
+                                                    </li>
+                                                </ul>
+                                                
+                                                <ul>
+                                                    <li><i>Nombre del producto:</i>Desarrollo de un sistema de control de acceso para ambientes de formación
+                                                        <i>Tipo de producto:</i>Producción bibliográfica - Trabajos en eventos (Capítulos de memoria) - Completo
+                                                    </li>
+                                                </ul>
+                                                
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                
+                                                <b>Instituciones asociadas</b><br>					
+                                                
+                                                <ul><li><i>Nombre de la institución:</i>SERVICIO NACIONAL DE APRENDIZAJE SENA
+                                                        <i>Tipo de producto:</i>Patrocinadora</li></ul>
+                                                        
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                
+                                                <b>Participantes</b><br>
+                                                
+                                                <ul><li><i>Nombre: </i>JOSE ALONSO OVIEDO MONROY
+                                                        <i>Rol en el evento: </i>Ponente
+                                                    </li>
+                                                </ul>
+                                                
+                                            </td>
+                                        </tr>
+                                    </tbody></table>    				  
+                                </td>                         				
+                            </tr>          
+                                
+                            <tr>
+                                <td> 
+                                    <table>           
+                                        <tbody><tr>
+                                            <td>
+                                                
+                                                <img src="./CvLAC - RG_files/chulo.jpg" height="15px" width="15px">
+                                                
+                                                <b>7</b>&nbsp;<i><b>Nombre del evento:&nbsp;</b></i>I Congreso de Innovación Competitividad y Desarrollo Sostenible&nbsp;
+                                                <i>Tipo de evento: </i>Congreso&nbsp;
+                                                <i>Ámbito: </i>Nacional&nbsp;                
+                                                <i>Realizado el:2017-12-11 00:00:00.0,&nbsp;
+                                                    2017-12-12 00:00:00.0 &nbsp;
+                                                    en BARRANQUILLA &nbsp; -  &nbsp;
+                                            </i></td>                         				
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                
+                                                <b>Productos asociados</b><br>
+                                                
+                                                <ul>
+                                                    <li><i>Nombre del producto:</i>CAPAF: UN SISTEMA PARA EL CONTROL DE ACCESO
+                                                        <i>Tipo de producto:</i>Producción técnica - Presentación de trabajo - Ponencia
+                                                    </li>
+                                                </ul>
+                                                
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                
+                                                <b>Instituciones asociadas</b><br>					
+                                                
+                                                <ul><li><i>Nombre de la institución:</i>SERVICIO NACIONAL DE APRENDIZAJE SENA
+                                                        <i>Tipo de producto:</i>Patrocinadora</li></ul>
+                                                        
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                
+                                                <b>Participantes</b><br>
+                                                
+                                                <ul><li><i>Nombre: </i>JOSE ALONSO OVIEDO MONROY
+                                                        <i>Rol en el evento: </i>Ponente
+                                                    </li>
+                                                </ul>
+                                                
+                                            </td>
+                                        </tr>
+                                    </tbody></table>    				  
+                                </td>                         				
+                            </tr>          
+                                
+                            <tr>
+                                <td> 
+                                    <table>           
+                                        <tbody><tr>
+                                            <td>
+                                                
+                                                <img src="./CvLAC - RG_files/chulo.jpg" height="15px" width="15px">
+                                                
+                                                <b>8</b>&nbsp;<i><b>Nombre del evento:&nbsp;</b></i>Congreso Latino-Iberoamericano de Gestión Tecnológica&nbsp;
+                                                <i>Tipo de evento: </i>Congreso&nbsp;
+                                                <i>Ámbito: </i>Internacional&nbsp;                
+                                                <i>Realizado el:2019-10-30 00:00:00.0,&nbsp;
+                                                    2019-11-01 00:00:00.0 &nbsp;
+                                                    en MEDELLÍN &nbsp; -  &nbsp;
+                                            </i></td>                         				
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                
+                                                <b>Productos asociados</b><br>
+                                                
+                                                <ul>
+                                                    <li><i>Nombre del producto:</i>SENA Market: Aplicación móvil para la administración financiera en las tiendas de barrio de la ciudad de Ibagué
+                                                        <i>Tipo de producto:</i>Producción técnica - Presentación de trabajo - Ponencia
+                                                    </li>
+                                                </ul>
+                                                
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                
+                                                <b>Instituciones asociadas</b><br>					
+                                                
+                                                <ul><li><i>Nombre de la institución:</i>SERVICIO NACIONAL DE APRENDIZAJE SENA
+                                                        <i>Tipo de producto:</i>Patrocinadora</li></ul>
+                                                        
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                
+                                                <b>Participantes</b><br>
+                                                
+                                                <ul><li><i>Nombre: </i>JOAQUIN EDUARDO CARRILLO ORJUELA
+                                                        <i>Rol en el evento: </i>Ponente
+                                                    </li>
+                                                </ul>
+                                                
+                                                <ul><li><i>Nombre: </i>JOSE ALONSO OVIEDO MONROY
+                                                        <i>Rol en el evento: </i>Ponente
+                                                    </li>
+                                                </ul>
+                                                
+                                            </td>
+                                        </tr>
+                                    </tbody></table>    				  
+                                </td>                         				
+                            </tr>          
+                                
+                            <tr>
+                                <td> 
+                                    <table>           
+                                        <tbody><tr>
+                                            <td>
+                                                
+                                                <img src="./CvLAC - RG_files/chulo.jpg" height="15px" width="15px">
+                                                
+                                                <b>9</b>&nbsp;<i><b>Nombre del evento:&nbsp;</b></i>V EISE "Encuentro de Investigadores, Semillero y Empresarios"&nbsp;
+                                                <i>Tipo de evento: </i>Encuentro&nbsp;
+                                                <i>Ámbito: </i>Nacional&nbsp;                
+                                                <i>Realizado el:2018-11-27 00:00:00.0,&nbsp;
+                                                    2018-11-29 00:00:00.0 &nbsp;
+                                                    en IBAGUÉ &nbsp; -  &nbsp;
+                                            </i></td>                         				
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                
+                                                <b>Productos asociados</b><br>
+                                                
+                                                <ul>
+                                                    <li><i>Nombre del producto:</i>Realidad aumentada para la enseñanza de lesiones óseas
+                                                        <i>Tipo de producto:</i>Producción técnica - Presentación de trabajo - Ponencia
+                                                    </li>
+                                                </ul>
+                                                
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                
+                                                <b>Instituciones asociadas</b><br>					
+                                                
+                                                <ul><li><i>Nombre de la institución:</i>SERVICIO NACIONAL DE APRENDIZAJE SENA
+                                                        <i>Tipo de producto:</i>Patrocinadora</li></ul>
+                                                        
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                
+                                                <b>Participantes</b><br>
+                                                
+                                                <ul><li><i>Nombre: </i>JOSE ALONSO OVIEDO MONROY
+                                                        <i>Rol en el evento: </i>Ponente
+                                                    </li>
+                                                </ul>
+                                                
+                                            </td>
+                                        </tr>
+                                    </tbody></table>    				  
+                                </td>                         				
+                            </tr>          
+                                
+                            <tr>
+                                <td> 
+                                    <table>           
+                                        <tbody><tr>
+                                            <td>
+                                                
+                                                <img src="./CvLAC - RG_files/chulo.jpg" height="15px" width="15px">
+                                                
+                                                <b>10</b>&nbsp;<i><b>Nombre del evento:&nbsp;</b></i>V Simposio Nacional de Formación con Calidad y Pertinencia&nbsp;
+                                                <i>Tipo de evento: </i>Simposio&nbsp;
+                                                <i>Ámbito: </i>Nacional&nbsp;                
+                                                <i>Realizado el:2018-11-08 00:00:00.0,&nbsp;
+                                                    2018-11-09 00:00:00.0 &nbsp;
+                                                    en MEDELLÍN &nbsp; - Centro de Comercio, Sena Antioquia &nbsp;
+                                            </i></td>                         				
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                
+                                                <b>Productos asociados</b><br>
+                                                
+                                                <ul>
+                                                    <li><i>Nombre del producto:</i>REALIDAD AUMENTADA PARA LA ENSEÑANZA DE LESIONES ÓSEAS
+                                                        <i>Tipo de producto:</i>Producción técnica - Presentación de trabajo - Ponencia
+                                                    </li>
+                                                </ul>
+                                                
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                
+                                                <b>Instituciones asociadas</b><br>					
+                                                
+                                                <ul><li><i>Nombre de la institución:</i>SERVICIO NACIONAL DE APRENDIZAJE SENA
+                                                        <i>Tipo de producto:</i>Patrocinadora</li></ul>
+                                                        
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                
+                                                <b>Participantes</b><br>
+                                                
+                                                <ul><li><i>Nombre: </i>JOSE ALONSO OVIEDO MONROY
+                                                        <i>Rol en el evento: </i>Ponente
+                                                    </li>
+                                                </ul>
+                                                
+                                            </td>
+                                        </tr>
+                                    </tbody></table>    				  
+                                </td>                         				
+                            </tr>          
+                             
+                        </tbody></table> 
+
+                        </td>
+                </tr>        
+
+                <tr>        
+                    <td width="100%"><a name="re_co"></a></td>
+                </tr>
+                		   
+
+                <tr>        
+                    <td width="100%"><a name="pr_ex_re"></a></td>
+                </tr>
+
+                <!--               //  //APROPIACION FORTALECIMIENTOS-->
+                <tr>
+                    <td width="100%"><a name="asc_for"></a></td>
+                </tr>
+
+                <!--                FIN FORTALECIMIENTOS-->
+
+                <!--               //  //APROPIACION TRABAJOS-->
+                <tr>
+                    <td width="100%"><a name="asc_tra"></a></td>
+                </tr>
+
+                <!--                FIN TRABAJOS-->
+
+                <!-- APROPIACION GENERACION-->
+                <tr>
+                    <td width="100%"><a name="asc_gen"></a></td>
+                </tr>
+
+                <!--                FIN GENERACION-->
+
+                <!-- APROPIACION CADENAS-->
+                <tr>
+                    <td width="100%"><a name="asc_cad"></a></td>
+                </tr>
+
+                <!--                FIN CADENAS-->
+
+                <!-- DIVULGACION CONTENIDO EDITORIAL-->
+                <tr>
+                    <td width="100%"><a name="div_ced"></a></td>
+                </tr>
+
+                <!--                FIN CONTENIDO EDITORIAL-->
+
+                <!-- DIVULGACION CONTENIDO AUDIOVISUAL -->
+                <tr>
+                    <td width="100%"><a name="div_cda"></a></td>
+                </tr>
+
+                <!--                FIN CONTENIDO AUDIOVISUAL-->
+
+                <!-- DIVULGACION CONTENIDO SONORO -->
+                <tr>
+                    <td width="100%"><a name="div_cds"></a></td>
+                </tr>
+
+                <!--                FIN CONTENIDO SONORO-->
+
+                <!-- DIVULGACION CONTENIDO RECURSOS -->
+                <tr>
+                    <td width="100%"><a name="div_cdr"></a></td>
+                </tr>
+
+                <!--                FIN CONTENIDO RECURSOS-->
+
+                <!-- DIVULGACION TRANSMEDIA -->
+                <tr>
+                    <td width="100%"><a name="div_ctr"></a></td>
+                </tr>
+
+                <!--                FIN CONTENIDO TRANSMEDIA-->
+
+                <!-- DIVULGACION DESARROLLO WEB  -->
+                <tr>
+                    <td width="100%"><a name="div_des"></a></td>
+                </tr>
+                <!--Bibliografica-->                    
+    <tr>        
+        <td width="100%"><a name="articulos"></a></td>
+</tr>
+<tr>        
+    <td width="100%"><a name="libros"></a>
+        <table width="100%" style="border:#999 1px solid">
+            <tbody><tr>
+                <td><h3>Libros</h3></td>
+            </tr>
+                
+            <tr>
+                <td><li>
+                
+                <b>Producción bibliográfica - Libro - Libro resultado de investigación</b>
+            </li></td>
+</tr>
+<tr>
+    <td>
+        <blockquote>
+                                
+            JOSE ALONSO OVIEDO MONROY,                    
+                                
+            JOAQUIN EDUARDO CARRILLO ORJUELA,                    
+                                
+            JAIRO FERNANDEZ MOLANO,                    
+                                
+            FABIAN ENRIQUE CASTRO BOCANEGRA,                    
+                                
+            JORGE ARMANDO VARELA RENDON,                    
+                                
+            OMAR ARLEY ARENAS QUIMBAYO,                    
+                                
+            LUIS FELIPE LOZADA VALENCIA,                    
+            
+            "Implementación de un modelo administrativo y financiero para las tiendas de la ciudad de Ibagué"
+            En: Colombia
+            2017.&nbsp;
+            ed:servicio Nacional de Aprendizaje - SENA&nbsp;
+            <i>ISBN:</i>&nbsp;978-958-15-0287-5&nbsp;
+            <i>v. </i>
+            <i>pags.</i>&nbsp;
+            
+            
+            <br><b>Palabras: </b><br>
+                                
+            Administración de tiendas,                    
+                                
+            Aplicación móvil,                    
+                                
+            Flujo de caja,                    
+                                
+            Información contable,                    
+                                
+            Información financiera,                    
+                                
+            Mipymes,                    
+                                
+            Tiendas de barrio,                    
+            
+            
+                           
+            <br><b>Areas: </b><br>
+                                    
+            Ciencias Sociales -- Economía y Negocios -- Negocios y Management,                    
+            
+            
+            
+        </blockquote>
+    </td>
+</tr>
+    
+            <tr>
+                <td><li>
+                
+                <img src="./CvLAC - RG_files/chulo.jpg" height="15px" width="15px">
+                
+                <b>Producción bibliográfica - Libro - Libro resultado de investigación</b>
+            </li></td>
+</tr>
+<tr>
+    <td>
+        <blockquote>
+                                
+            JOSE ALONSO OVIEDO MONROY,                    
+                                
+            ANDRES ARCINIEGAS,                    
+                                
+            MARTHA DENIS ROJAS MARTINEZ,                    
+            
+            "Realidad aumentada en la enseñanza de lesiones óseas"
+            En: Colombia
+            2019.&nbsp;
+            ed:servicio Nacional de Aprendizaje - SENA&nbsp;
+            <i>ISBN:</i>&nbsp;978-958-15-0497-8&nbsp;
+            <i>v. </i>
+            <i>pags.</i>&nbsp;
+            
+            
+            <br><b>Palabras: </b><br>
+                                
+            Realidad aumentada,                    
+                                
+            Lesiones óseas,                    
+                                
+            Enseñanza,                    
+                                
+            Huesos,                    
+            
+            
+                           
+            <br><b>Areas: </b><br>
+                                    
+            Ingeniería y Tecnología -- Ingenierías Eléctrica, Electrónica e Informática -- Ingeniería de Sistemas y Comunicaciones,                    
+                                    
+            Ciencias Médicas y de la Salud -- Medicina Básica -- Anatomía y morfología,                    
+                                    
+            Ciencias Médicas y de la Salud -- Medicina Clínica -- Ortopédica,                    
+            
+            
+            
+        </blockquote>
+    </td>
+</tr>
+    
+            <tr>
+                <td><li>
+                
+                <img src="./CvLAC - RG_files/chulo.jpg" height="15px" width="15px">
+                
+                <b>Producción bibliográfica - Libro - Libro resultado de investigación</b>
+            </li></td>
+</tr>
+<tr>
+    <td>
+        <blockquote>
+                                
+            JOSE ALONSO OVIEDO MONROY,                    
+                                
+            ANDRES ARCINIEGAS,                    
+                                
+            DIEGO FERNANDO GUTIERREZ RODRIGUEZ,                    
+            
+            "Diseño de un software integrado de test funcionales aplicados al deporte"
+            En: Colombia
+            2020.&nbsp;
+            ed:Sena&nbsp;
+            <i>ISBN:</i>&nbsp;978-958-15-0588-3&nbsp;
+            <i>v. </i>
+            <i>pags.</i>&nbsp;
+            
+            
+            
+                           
+            <br><b>Areas: </b><br>
+                                    
+            Ingeniería y Tecnología -- Ingenierías Eléctrica, Electrónica e Informática -- Ingeniería de Sistemas y Comunicaciones,                    
+            
+            
+            
+        </blockquote>
+    </td>
+</tr>
+    
+            <tr>
+                <td><li>
+                
+                <img src="./CvLAC - RG_files/chulo.jpg" height="15px" width="15px">
+                
+                <b>Producción bibliográfica - Libro - Libro resultado de investigación</b>
+            </li></td>
+</tr>
+<tr>
+    <td>
+        <blockquote>
+                                
+            JOSE ALONSO OVIEDO MONROY,                    
+                                
+            ANDRES ARCINIEGAS,                    
+                                
+            FREDDY CAMACHO GARCIA,                    
+            
+            "Desarrollo de una herramienta de selección personal basada en reclutamiento predictivo e inteligencia artificial"
+            En: Colombia
+            2021.&nbsp;
+            ed:Ediciones SENA&nbsp;
+            <i>ISBN:</i>&nbsp;978-958-15-0668-2&nbsp;
+            <i>v. </i>
+            <i>pags.</i>&nbsp;
+            
+            
+            
+                           
+            <br><b>Areas: </b><br>
+                                    
+            Ingeniería y Tecnología -- Ingenierías Eléctrica, Electrónica e Informática -- Ingeniería de Sistemas y Comunicaciones,                    
+            
+            
+            
+        </blockquote>
+    </td>
+</tr>
+    
+            <tr>
+                <td><li>
+                
+                <img src="./CvLAC - RG_files/chulo.jpg" height="15px" width="15px">
+                
+                <b>Producción bibliográfica - Libro - Libro resultado de investigación</b>
+            </li></td>
+</tr>
+<tr>
+    <td>
+        <blockquote>
+                                
+            JOSE ALONSO OVIEDO MONROY,                    
+                                
+            JOAQUIN EDUARDO CARRILLO ORJUELA,                    
+                                
+            JAIME ANDRES MORALES SAAVEDRA,                    
+                                
+            MAURICIO TAUTIVA GUZMAN,                    
+            
+            "Plataforma virtual de comercio electrónico para MIPYMES del sector gastronómico de la ciudad de Ibagué"
+            En: Colombia
+            2022.&nbsp;
+            ed:Ediciones SENA&nbsp;
+            <i>ISBN:</i>&nbsp;978-958-15-0728-3&nbsp;
+            <i>v. </i>
+            <i>pags.</i>&nbsp;
+            
+            
+            
+                           
+            <br><b>Areas: </b><br>
+                                    
+            Ingeniería y Tecnología -- Ingenierías Eléctrica, Electrónica e Informática -- Ingeniería de Sistemas y Comunicaciones,                    
+                                    
+            Ciencias Sociales -- Economía y Negocios -- Economía,                    
+            
+            
+            
+        </blockquote>
+    </td>
+</tr>
+    
+            <tr>
+                <td><li>
+                
+                <img src="./CvLAC - RG_files/chulo.jpg" height="15px" width="15px">
+                
+                <b>Producción bibliográfica - Libro - Libro resultado de investigación</b>
+            </li></td>
+</tr>
+<tr>
+    <td>
+        <blockquote>
+                                
+            JOSE ALONSO OVIEDO MONROY,                    
+                                
+            FABIAN ENRIQUE CASTRO BOCANEGRA,                    
+                                
+            JAIRO FERNANDEZ MOLANO,                    
+                                
+            JOAQUIN EDUARDO CARRILLO ORJUELA,                    
+                                
+            JORGE ARMANDO VARELA RENDON,                    
+                                
+            LUIS FELIPE LOZADA VALENCIA,                    
+                                
+            OMAR ARLEY ARENAS QUIMBAYO,                    
+            
+            "Modelo administrativo y financiero para las tiendas clasificadas como microempresas comerciales de la comuna 5 de la ciudad de Ibagué"
+            En: Colombia
+            2016.&nbsp;
+            ed:Servicio Nacional de Aprendizaje&nbsp;
+            <i>ISBN:</i>&nbsp;978-958-15-0232-5&nbsp;
+            <i>v. </i>
+            <i>pags.</i>&nbsp;
+            
+            
+            
+                           
+            <br><b>Areas: </b><br>
+                                    
+            Ciencias Sociales -- Economía y Negocios -- Negocios y Management,                    
+            
+            
+            
+        </blockquote>
+    </td>
+</tr>
+
+</tbody></table>
+</td>
+</tr>       
+<tr>        
+    <td width="100%"><a name="capitulos"></a>        
+        <table width="100%" style="border:#999 1px solid">
+            <tbody><tr>
+                <td colspan="2"><h3>Capitulos de libro</h3></td>
+            </tr>
+                
+            <tr>        
+                <td>                
+            <li>
+                <blockquote>
+                    
+                    
+                    Tipo: Otro capítulo de libro publicado<br>
+                    JOSE ALONSO OVIEDO MONROY,                    
+                    
+                    Tipo: Otro capítulo de libro publicado<br>
+                    FABIAN ENRIQUE CASTRO BOCANEGRA,                    
+                    
+
+                    "Tiendas de barrio a la vanguardia de la competitividad"
+                    Obra digital XIX Congreso AECA
+                    . En: España&nbsp;
+                    <i>ISBN:</i>&nbsp;978-84-16286-37-9&nbsp;
+                    <i>ed:</i>&nbsp;
+                    <i>, v.</i>
+                    , p.72g
+                    - &nbsp;
+                    
+                    ,2017
+                    
+                    
+                    <br><b>Palabras: </b><br>
+                                        
+                    Administración de tiendas,                    
+                                        
+                    Flujo de caja,                    
+                                        
+                    Información contable,                    
+                                        
+                    Información financiera,                    
+                                        
+                    Mipymes,                    
+                                        
+                    Tiendas de barrio,                    
+                    
+                    
+                                   
+                    <br><b>Areas: </b><br>
+                                            
+                    Ciencias Sociales -- Economía y Negocios -- Negocios y Management,                    
+                    
+                    
+                    
+                </blockquote>
+            </li>
+    </td>        
+</tr>
+    
+            <tr>        
+                <td>                
+            <li>
+                <blockquote>
+                    
+                    
+                    Tipo: Otro capítulo de libro publicado<br>
+                    JOSE ALONSO OVIEDO MONROY,                    
+                    
+
+                    "Development of an application for mobile devices with augmented reality for the teaching of fracture characteristics"
+                    Proceedings INNODOCT/18. International Conference on Innovation, Documentation and Education
+                    . En: España&nbsp;
+                    <i>ISBN:</i>&nbsp;978-84-9048-711-2&nbsp;
+                    <i>ed:</i>&nbsp;Universidad Politécnica de Valencia
+                    <i>, v.</i>
+                    , p.139
+                    - 149&nbsp;
+                    
+                    ,2018
+                    
+                    
+                    
+                                   
+                    <br><b>Areas: </b><br>
+                                            
+                    Ingeniería y Tecnología -- Ingenierías Eléctrica, Electrónica e Informática -- Ingeniería de Sistemas y Comunicaciones,                    
+                    
+                    
+                    
+                </blockquote>
+            </li>
+    </td>        
+</tr>
+
+</tbody></table>
+</td>
+</tr>
+<!--Inicio nota cientifica-->               
+<tr>        
+    <td width="100%"><a name="nota_cientifica"></a></td>
+</tr>
+<!--Fin Nota cientificas-->
+<tr>        
+    <td width="100%">
+        <table width="100%" style="border:#999 1px solid">
+            <tbody><tr>
+                <td><h3 id="textos">Textos en publicaciones no científicas</h3></td>
+            </tr>        
+               
+            <tr>
+                <td><li>
+                
+                <img src="./CvLAC - RG_files/chulo.jpg" height="15px" width="15px">
+                
+                <b>Producción bibliográfica - Otro artículo publicado - Revista de divulgación</b>
+            </li>
+    </td>
+</tr>
+<tr>
+    <td>
+        <blockquote>
+                                
+            JOSE ALONSO OVIEDO MONROY,                    
+            
+            "Diseño de estrategias para la mejora del servicio al paciente en los centros médicos de Ibagué"
+            En: Colombia. 
+            2014.
+            Vía Innova.
+            <i>ISSN:</i>&nbsp;2422-068X 
+            <i>p.</i>10 
+            - 11
+            v.1
+            
+            
+            <br><b>Palabras: </b><br>
+                                
+            Calidad del servicio,                    
+                                
+            SERVQHOS,                    
+                                
+            Satisfacción del paciente,                    
+            
+            
+                           
+            <br><b>Areas: </b><br>
+                                    
+            Ingeniería y Tecnología -- Otras Ingenierías y Tecnologías -- Ingeniería Industrial,                    
+            
+            
+            
+        </blockquote>
+    </td>
+</tr>
+   
+            <tr>
+                <td><li>
+                
+                <img src="./CvLAC - RG_files/chulo.jpg" height="15px" width="15px">
+                
+                <b>Producción bibliográfica - Otro artículo publicado - Revista de divulgación</b>
+            </li>
+    </td>
+</tr>
+<tr>
+    <td>
+        <blockquote>
+                                
+            JOSE ALONSO OVIEDO MONROY,                    
+            
+            "Herramienta computacional para la gestión de abastecimiento en empresas distribuidoras de Ibagué."
+            En: Colombia. 
+            2020.
+            Vía Innova.
+            <i>ISSN:</i>&nbsp;2422-068X 
+            <i>p.</i>33 
+            - 40
+            v.7
+            
+            
+            <br><b>Palabras: </b><br>
+                                
+            Cadena de suministro,                    
+                                
+            Gestión de inventarios,                    
+                                
+            Desarrollo de software,                    
+            
+            
+                           
+            <br><b>Areas: </b><br>
+                                    
+            Ingeniería y Tecnología -- Ingenierías Eléctrica, Electrónica e Informática -- Ingeniería de Sistemas y Comunicaciones,                    
+            
+            
+            
+        </blockquote>
+    </td>
+</tr>
+   
+            <tr>
+                <td><li>
+                
+                <img src="./CvLAC - RG_files/chulo.jpg" height="15px" width="15px">
+                
+                <b>Producción bibliográfica - Otro artículo publicado - Revista de divulgación</b>
+            </li>
+    </td>
+</tr>
+<tr>
+    <td>
+        <blockquote>
+                                
+            JOSE ALONSO OVIEDO MONROY,                    
+                                
+            FABIAN ENRIQUE CASTRO BOCANEGRA,                    
+                                
+            JORGE ARMANDO VARELA RENDON,                    
+                                
+            JAIRO FERNANDEZ MOLANO,                    
+                                
+            LUIS FELIPE LOZADA VALENCIA,                    
+                                
+            JOAQUIN EDUARDO CARRILLO ORJUELA,                    
+                                
+            OMAR ARLEY ARENAS QUIMBAYO,                    
+            
+            "Estado administrativo, contable y financiero de las tiendas de la comuna 5 de la ciudad de Ibagué"
+            En: Colombia. 
+            2016.
+            Vía Innova.
+            <i>ISSN:</i>&nbsp;2422-068X 
+            <i>p.</i>16 
+            - 21
+            v.3
+            
+            
+            <br><b>Palabras: </b><br>
+                                
+            Flujo de caja,                    
+                                
+            Información financiera,                    
+                                
+            Información contable,                    
+                                
+            Tiendas,                    
+                                
+            Pymes,                    
+                                
+            Mipymes,                    
+            
+            
+                           
+            <br><b>Areas: </b><br>
+                                    
+            Ciencias Sociales -- Economía y Negocios -- Negocios y Management,                    
+            
+            
+            
+        </blockquote>
+    </td>
+</tr>
+   
+            <tr>
+                <td><li>
+                
+                <img src="./CvLAC - RG_files/chulo.jpg" height="15px" width="15px">
+                
+                <b>Producción bibliográfica - Otro artículo publicado - Revista de divulgación</b>
+            </li>
+    </td>
+</tr>
+<tr>
+    <td>
+        <blockquote>
+                                
+            JOSE ALONSO OVIEDO MONROY,                    
+            
+            "SENA Market: Aplicación móvil para la administración financiera en las tiendas de barrio de la ciudad de Ibagué"
+            En: México. 
+            2019.
+            2594-0937.
+            <i>ISSN:</i>&nbsp;2594-0937 
+            <i>p.</i>1 
+            - 19
+            v.3
+            
+            
+            
+                           
+            <br><b>Areas: </b><br>
+                                    
+            Ingeniería y Tecnología -- Ingenierías Eléctrica, Electrónica e Informática -- Ingeniería de Sistemas y Comunicaciones,                    
+            
+            
+            
+        </blockquote>
+    </td>
+</tr>
+   
+            <tr>
+                <td><li>
+                
+                <img src="./CvLAC - RG_files/chulo.jpg" height="15px" width="15px">
+                
+                <b>Producción bibliográfica - Otro artículo publicado - Revista de divulgación</b>
+            </li>
+    </td>
+</tr>
+<tr>
+    <td>
+        <blockquote>
+                                
+            JOSE ALONSO OVIEDO MONROY,                    
+            
+            "Puntos fuertes y débiles en la formación por competencias según los egresados del Sena"
+            En: Colombia. 
+            2015.
+            Vía Innova.
+            <i>ISSN:</i>&nbsp;2422-068X 
+            <i>p.</i>24 
+            - 27
+            v.2
+            
+            
+            <br><b>Palabras: </b><br>
+                                
+            Competencias,                    
+                                
+            Puntos fuertes y débiles,                    
+                                
+            Programas de formación,                    
+                                
+            Enfoque del aprendizaje,                    
+                                
+            Aprendizaje,                    
+                                
+            Contexto de aprendizaje,                    
+                                
+            SENA,                    
+            
+            
+                           
+            <br><b>Areas: </b><br>
+                                    
+            Ingeniería y Tecnología -- Otras Ingenierías y Tecnologías -- Ingeniería Industrial,                    
+            
+            
+            
+        </blockquote>
+    </td>
+</tr>
+   
+            <tr>
+                <td><li>
+                
+                <img src="./CvLAC - RG_files/chulo.jpg" height="15px" width="15px">
+                
+                <b>Producción bibliográfica - Otro artículo publicado - Revista de divulgación</b>
+            </li>
+    </td>
+</tr>
+<tr>
+    <td>
+        <blockquote>
+                                
+            JOSE ALONSO OVIEDO MONROY,                    
+            
+            "SENA Market: una aplicación Android para la administración de tiendas"
+            En: Colombia. 
+            2017.
+            Revista R.E.T.O..
+            <i>ISSN:</i>&nbsp;2333-8059 
+            <i>p.</i>16 
+            - 22
+            v.5
+            
+            
+            <br><b>Palabras: </b><br>
+                                
+            Aplicación móvil,                    
+                                
+            Tiendas de barrio,                    
+                                
+            Informática móvil,                    
+                                
+            Administración de tiendas,                    
+            
+            
+                           
+            <br><b>Areas: </b><br>
+                                    
+            Ciencias Sociales -- Economía y Negocios -- Negocios y Management,                    
+                                    
+            Ingeniería y Tecnología -- Ingenierías Eléctrica, Electrónica e Informática -- Ingeniería de Sistemas y Comunicaciones,                    
+            
+            
+            
+        </blockquote>
+    </td>
+</tr>
+   
+            <tr>
+                <td><li>
+                
+                <img src="./CvLAC - RG_files/chulo.jpg" height="15px" width="15px">
+                
+                <b>Producción bibliográfica - Otro artículo publicado - Revista de divulgación</b>
+            </li>
+    </td>
+</tr>
+<tr>
+    <td>
+        <blockquote>
+                                
+            JOSE ALONSO OVIEDO MONROY,                    
+            
+            "Desarrollo de un sistema de control de acceso para ambientes de formación"
+            En: México. 
+            2018.
+            CONGRESO INTERNACIONAL DE INVESTIGACIÓN E INNOVACIÓN 2016.
+            <i>ISSN:</i>&nbsp;2448-6035 
+            <i>p.</i>8623 
+            - 8632
+            v.2
+            
+            
+            <br><b>Palabras: </b><br>
+                                
+            Control de acceso,                    
+                                
+            Sistemas biométricos,                    
+                                
+            Desarrollo de software,                    
+                                
+            Sistemas de información,                    
+            
+            
+                           
+            <br><b>Areas: </b><br>
+                                    
+            Ingeniería y Tecnología -- Ingenierías Eléctrica, Electrónica e Informática -- Ingeniería de Sistemas y Comunicaciones,                    
+            
+            
+            
+        </blockquote>
+    </td>
+</tr>
+
+</tbody></table>
+</td>
+</tr>
+<tr>        
+    <td width="100%"><a name="otra_prod_biblio"></a></td>
+</tr>   
+
+<!-- LIBROS TRADUCCIONES FILOLOGICAS  -->
+<tr>
+    <td width="100%"><a name="lib_tra"></a></td>
+</tr>
+
+<!--                FIN TRADUCCIONES FILOLOGICAS-->
+
+
+<!-- LIBROS DE CREACION -->
+<tr>
+    <td width="100%"><a name="lib_cre"></a></td>
+</tr>
+
+<!--                FIN LIBROS CREACION-->
+
+<!-- LIBROS DE FORMACION -->
+<tr>
+    <td width="100%"><a name="lib_for"></a></td>
+</tr>
+
+<!--                FIN LIBROS FORMACION-->
+
+<!-- LIBROS DE DIVULGACION -->
+<tr>
+    <td width="100%"><a name="lib_div"></a>
+        <table width="100%" style="border:#999 1px solid">
+            <tbody><tr>
+                <td><h3>Libros de divulgación y/o Compilación de divulgación</h3></td>
+            </tr>
+                
+            <tr>
+                <td><li><b>Producción bibliográfica - Libro - Libros de divulgación y/o Compilación de divulgación </b></li></td>
+</tr>
+<tr>
+    <td>
+        <blockquote>
+            <i>Nombre del libro: </i>Desarrollo de sistemas de control de acceso para ambientes de formación,&nbsp;   
+            <i>Fecha de presentación: </i>2017 -   
+            Diciembre,&nbsp;
+            <i>Isbn: </i>978-958-15-0293-6,&nbsp;   
+            <i>Medio de divulgación: </i>Papel,&nbsp;   
+            <i>Lugar de publicación: </i>Colombia,&nbsp;   
+            <i>Editorial: </i>Servicio Nacional de Aprendizaje,&nbsp;  
+            
+                           
+            <br><b>Areas: </b><br>
+                                    
+            Ingeniería y Tecnología -- Ingenierías Eléctrica, Electrónica e Informática -- Ingeniería de Sistemas y Comunicaciones,                    
+            
+        </blockquote>
+    </td>
+</tr>
+    
+            <tr>
+                <td><li><b>Producción bibliográfica - Libro - Libros de divulgación y/o Compilación de divulgación </b></li></td>
+</tr>
+<tr>
+    <td>
+        <blockquote>
+            <i>Nombre del libro: </i>Diseño de un aplicativo para la gestión y control de inventarios en pymes distribuidoras de consumo masivo de Ibagué,&nbsp;   
+            <i>Fecha de presentación: </i>2020 -   
+            Diciembre,&nbsp;
+            <i>Isbn: </i>978-958-15-0587-6,&nbsp;   
+            <i>Medio de divulgación: </i>Electrónico,&nbsp;   
+            <i>Lugar de publicación: </i>Colombia,&nbsp;   
+            <i>Editorial: </i>Sena,&nbsp;  
+            
+                           
+            <br><b>Areas: </b><br>
+                                    
+            Ingeniería y Tecnología -- Ingenierías Eléctrica, Electrónica e Informática -- Ingeniería de Sistemas y Comunicaciones,                    
+            
+        </blockquote>
+    </td>
+</tr>
+
+</tbody></table>
+</td>
+</tr>
+<!-- FIN LIBROS DIVULGACION-->
+<!--INICIO MANUALES -->
+<tr>
+    <td width="100%"><a name="lib_man"></a></td>
+</tr>
+<!--FIN MANUALES-->
+<!--INICIO BOLETINES-->
+<tr>        
+    <td width="100%"></td>
+</tr>
+<!--FIN BOLETINES-->
+<tr>        
+    <td width="100%"></td>
+</tr>
+<tr>        
+    <td width="100%"></td>
+</tr>
+<!--fin bibliografica-->
+                <!--FIN CONTENIDO RECURSOS-->
+
+                
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+                
+<!--Produccion tecnica-->
+
+<!--Inicio patentes -->
+<tr>        
+    <td width="100%"><a name="patentes"></a></td>
+</tr>
+<!--Fin patentes -->
+
+
+<!--Inicio secretos -->
+<tr>        
+    <td width="100%"><a name="secretos"></a></td>
+</tr>
+<!--Fin secretos -->
+
+<tr>        
+    <td width="100%"><a name="software"></a>
+        <table width="100%" style="border:#999 1px solid">
+            <tbody><tr>
+                <td><h3>Softwares</h3></td>
+            </tr>
+                
+            <tr>
+                <td>
+                    
+                    <img src="./CvLAC - RG_files/chulo.jpg" height="15px" width="15px">
+                    
+                    <b>Producción técnica - Softwares - Computacional</b></td>
+            </tr>
+            <tr>
+                <td>
+                    <blockquote>
+                                            
+                        JOSE ALONSO OVIEDO MONROY,                    
+                                            
+                        FREDDY CAMACHO GARCIA,                    
+                                            
+                        ANDRES ARCINIEGAS,                    
+                        
+                        Unicorn,
+                        <i>Nombre comercial: </i>Unicorn,
+                        <i>contrato/registro: </i>,
+                        . En: Colombia,&nbsp;
+                        ,2021,&nbsp;
+                        .<i>plataforma: ,</i>&nbsp;
+                        .<i>ambiente: ,</i>                                
+                        
+                        
+                        
+                                       
+                        <br><b>Areas: </b><br>
+                                                
+                        Humanidades -- Otras Humanidades -- Otras Humanidades,                    
+                        
+                        
+                        
+                        <br><b>Sectores: </b><br>
+                                                
+                        Otros sectores - Calidad y Productividad,                    
+                        
+
+                    </blockquote>            
+                </td>
+            </tr>
+                
+            <tr>
+                <td>
+                    
+                    <img src="./CvLAC - RG_files/chulo.jpg" height="15px" width="15px">
+                    
+                    <b>Producción técnica - Softwares - Computacional</b></td>
+            </tr>
+            <tr>
+                <td>
+                    <blockquote>
+                                            
+                        JOSE ALONSO OVIEDO MONROY,                    
+                        
+                        Simulación de equipos de trabajo,
+                        <i>Nombre comercial: </i>Equipos de Estudiantes,
+                        <i>contrato/registro: </i>,
+                        . En: Colombia,&nbsp;
+                        ,2022,&nbsp;
+                        .<i>plataforma: ,</i>&nbsp;
+                        .<i>ambiente: ,</i>                                
+                        
+                        
+                        
+                                       
+                        <br><b>Areas: </b><br>
+                                                
+                        Ingeniería y Tecnología -- Ingenierías Eléctrica, Electrónica e Informática -- Ingeniería de Sistemas y Comunicaciones,                    
+                                                
+                        Ciencias Sociales -- Ciencias de la Educación -- Educación General (Incluye Capacitación, Pedagogía),                    
+                        
+                        
+                        
+                        <br><b>Sectores: </b><br>
+                                                
+                        Educación - Educación superior,                    
+                                                
+                        Educación - Educación secundaria de formación técnica,                    
+                        
+
+                    </blockquote>            
+                </td>
+            </tr>
+                
+            <tr>
+                <td>
+                    
+                    <b>Producción técnica - Softwares - Computacional</b></td>
+            </tr>
+            <tr>
+                <td>
+                    <blockquote>
+                                            
+                        JOSE ALONSO OVIEDO MONROY,                    
+                                            
+                        ANDRES ARCINIEGAS,                    
+                        
+                        Sistema de visión artificial para la identificación de objetos,
+                        <i>Nombre comercial: </i>PICKVISION PRO,
+                        <i>contrato/registro: </i>,
+                        . En: Colombia,&nbsp;
+                        ,2023,&nbsp;
+                        .<i>plataforma: ,</i>&nbsp;
+                        .<i>ambiente: ,</i>                                
+                        
+                        
+                        
+                                       
+                        <br><b>Areas: </b><br>
+                                                
+                        Ingeniería y Tecnología -- Ingenierías Eléctrica, Electrónica e Informática -- Ingeniería de Sistemas y Comunicaciones,                    
+                        
+                        
+                        
+                        <br><b>Sectores: </b><br>
+                                                
+                        Logística de transporte, almacenamiento y comunicaciones,                    
+                        
+
+                    </blockquote>            
+                </td>
+            </tr>
+                
+            <tr>
+                <td>
+                    
+                    <b>Producción técnica - Softwares - Computacional</b></td>
+            </tr>
+            <tr>
+                <td>
+                    <blockquote>
+                                            
+                        JOSE ALONSO OVIEDO MONROY,                    
+                        
+                        Sistema de Información Farmacéutico II,
+                        <i>Nombre comercial: </i>SIFAR 2,
+                        <i>contrato/registro: </i>,
+                        . En: Colombia,&nbsp;
+                        ,2019,&nbsp;
+                        .<i>plataforma: Android.,</i>&nbsp;
+                        .<i>ambiente: ,</i>                                
+                        
+                        
+                        <br><b>Palabras: </b><br>
+                                            
+                        Aplicación móvil,                    
+                                            
+                        Farmacia,                    
+                        
+                        
+                                       
+                        <br><b>Areas: </b><br>
+                                                
+                        Ingeniería y Tecnología -- Ingenierías Eléctrica, Electrónica e Informática -- Ingeniería de Sistemas y Comunicaciones,                    
+                                                
+                        Ciencias Médicas y de la Salud -- Medicina Básica -- Farmacología y Farmacia,                    
+                        
+                        
+                        
+
+                    </blockquote>            
+                </td>
+            </tr>
+                
+            <tr>
+                <td>
+                    
+                    <img src="./CvLAC - RG_files/chulo.jpg" height="15px" width="15px">
+                    
+                    <b>Producción técnica - Softwares - Computacional</b></td>
+            </tr>
+            <tr>
+                <td>
+                    <blockquote>
+                                            
+                        JOSE ALONSO OVIEDO MONROY,                    
+                                            
+                        ANDRES ARCINIEGAS,                    
+                        
+                        Augmented Reality for Bone Injuries,
+                        <i>Nombre comercial: </i>AR4BI,
+                        <i>contrato/registro: </i>,
+                        . En: Colombia,&nbsp;
+                        ,2018,&nbsp;
+                        .<i>plataforma: Android desde la versión 4.4,</i>&nbsp;
+                        .<i>ambiente: ,</i>                                
+                        
+                        
+                        <br><b>Palabras: </b><br>
+                                            
+                        Augmented Reality,                    
+                                            
+                        Teaching,                    
+                                            
+                        Learning,                    
+                                            
+                        Bone injuries,                    
+                                            
+                        Fracture,                    
+                        
+                        
+                                       
+                        <br><b>Areas: </b><br>
+                                                
+                        Ingeniería y Tecnología -- Ingenierías Eléctrica, Electrónica e Informática -- Ingeniería de Sistemas y Comunicaciones,                    
+                                                
+                        Ciencias Médicas y de la Salud -- Medicina Básica -- Anatomía y morfología,                    
+                        
+                        
+                        
+
+                    </blockquote>            
+                </td>
+            </tr>
+                
+            <tr>
+                <td>
+                    
+                    <img src="./CvLAC - RG_files/chulo.jpg" height="15px" width="15px">
+                    
+                    <b>Producción técnica - Softwares - Computacional</b></td>
+            </tr>
+            <tr>
+                <td>
+                    <blockquote>
+                                            
+                        JOSE ALONSO OVIEDO MONROY,                    
+                        
+                        SENA Market,
+                        <i>Nombre comercial: </i>SENA Market,
+                        <i>contrato/registro: </i>,
+                        . En: Colombia,&nbsp;
+                        ,2017,&nbsp;
+                        .<i>plataforma: Android,</i>&nbsp;
+                        .<i>ambiente: ,</i>                                
+                        
+                        
+                        <br><b>Palabras: </b><br>
+                                            
+                        Administración de tiendas,                    
+                                            
+                        Aplicación móvil,                    
+                                            
+                        Flujo de caja,                    
+                                            
+                        Información contable,                    
+                                            
+                        Información financiera,                    
+                        
+                        
+                                       
+                        <br><b>Areas: </b><br>
+                                                
+                        Ingeniería y Tecnología -- Ingenierías Eléctrica, Electrónica e Informática -- Ingeniería de Sistemas y Comunicaciones,                    
+                        
+                        
+                        
+                        <br><b>Sectores: </b><br>
+                                                
+                        Actividades de asesoramiento y consultoría a las empresas - Asesoramiento o consultoría jurídica, contábil, de opinión pública y en la gestión de empresas,                    
+                        
+
+                    </blockquote>            
+                </td>
+            </tr>
+                
+            <tr>
+                <td>
+                    
+                    <img src="./CvLAC - RG_files/chulo.jpg" height="15px" width="15px">
+                    
+                    <b>Producción técnica - Softwares - Computacional</b></td>
+            </tr>
+            <tr>
+                <td>
+                    <blockquote>
+                                            
+                        JOSE ALONSO OVIEDO MONROY,                    
+                        
+                        CAPAF versión de servidor,
+                        <i>Nombre comercial: </i>CAPAF versión de servidor,
+                        <i>contrato/registro: </i>,
+                        . En: Colombia,&nbsp;
+                        ,2017,&nbsp;
+                        .<i>plataforma: ,</i>&nbsp;
+                        .<i>ambiente: ,</i>                                
+                        
+                        
+                        <br><b>Palabras: </b><br>
+                                            
+                        SENA,                    
+                                            
+                        Control de acceso,                    
+                                            
+                        Sistemas de información,                    
+                        
+                        
+                                       
+                        <br><b>Areas: </b><br>
+                                                
+                        Ingeniería y Tecnología -- Ingenierías Eléctrica, Electrónica e Informática -- Ingeniería de Sistemas y Comunicaciones,                    
+                        
+                        
+                        
+                        <br><b>Sectores: </b><br>
+                                                
+                        Educación - Educación secundaria de formación técnica,                    
+                        
+
+                    </blockquote>            
+                </td>
+            </tr>
+                
+            <tr>
+                <td>
+                    
+                    <img src="./CvLAC - RG_files/chulo.jpg" height="15px" width="15px">
+                    
+                    <b>Producción técnica - Softwares - Computacional</b></td>
+            </tr>
+            <tr>
+                <td>
+                    <blockquote>
+                                            
+                        JOSE ALONSO OVIEDO MONROY,                    
+                        
+                        CAPAF versión Web,
+                        <i>Nombre comercial: </i>CAPAF versión Web,
+                        <i>contrato/registro: </i>905 de 2017,
+                        . En: Colombia,&nbsp;
+                        ,2017,&nbsp;
+                        .<i>plataforma: ,</i>&nbsp;
+                        .<i>ambiente: ,</i>                                
+                        
+                        
+                        <br><b>Palabras: </b><br>
+                                            
+                        Control de acceso,                    
+                                            
+                        SENA,                    
+                                            
+                        Sistemas de información,                    
+                        
+                        
+                                       
+                        <br><b>Areas: </b><br>
+                                                
+                        Ingeniería y Tecnología -- Ingenierías Eléctrica, Electrónica e Informática -- Ingeniería de Sistemas y Comunicaciones,                    
+                        
+                        
+                        
+                        <br><b>Sectores: </b><br>
+                                                
+                        Educación - Educación secundaria de formación técnica,                    
+                        
+
+                    </blockquote>            
+                </td>
+            </tr>
+                
+            <tr>
+                <td>
+                    
+                    <img src="./CvLAC - RG_files/chulo.jpg" height="15px" width="15px">
+                    
+                    <b>Producción técnica - Softwares - Computacional</b></td>
+            </tr>
+            <tr>
+                <td>
+                    <blockquote>
+                                            
+                        JOSE ALONSO OVIEDO MONROY,                    
+                        
+                        CAPAF versión móvil,
+                        <i>Nombre comercial: </i>CAPAF versión móvil,
+                        <i>contrato/registro: </i>905 de 2017,
+                        . En: Colombia,&nbsp;
+                        ,2017,&nbsp;
+                        .<i>plataforma: Android,</i>&nbsp;
+                        .<i>ambiente: ,</i>                                
+                        
+                        
+                        <br><b>Palabras: </b><br>
+                                            
+                        Control de acceso,                    
+                                            
+                        SENA,                    
+                                            
+                        Sistemas de información,                    
+                        
+                        
+                                       
+                        <br><b>Areas: </b><br>
+                                                
+                        Ingeniería y Tecnología -- Ingenierías Eléctrica, Electrónica e Informática -- Ingeniería de Sistemas y Comunicaciones,                    
+                        
+                        
+                        
+                        <br><b>Sectores: </b><br>
+                                                
+                        Educación - Educación secundaria de formación técnica,                    
+                        
+
+                    </blockquote>            
+                </td>
+            </tr>
+                
+            <tr>
+                <td>
+                    
+                    <b>Producción técnica - Softwares - Computacional</b></td>
+            </tr>
+            <tr>
+                <td>
+                    <blockquote>
+                                            
+                        JOSE ALONSO OVIEDO MONROY,                    
+                        
+                        Aplicativo de gestión de inventarios,
+                        <i>Nombre comercial: </i>Estiba,
+                        <i>contrato/registro: </i>,
+                        . En: Colombia,&nbsp;
+                        ,2020,&nbsp;
+                        .<i>plataforma: ,</i>&nbsp;
+                        .<i>ambiente: ,</i>                                
+                        
+                        
+                        
+                                       
+                        <br><b>Areas: </b><br>
+                                                
+                        Ingeniería y Tecnología -- Ingenierías Eléctrica, Electrónica e Informática -- Ingeniería de Sistemas y Comunicaciones,                    
+                                                
+                        Ingeniería y Tecnología -- Otras Ingenierías y Tecnologías -- Ingeniería Industrial,                    
+                        
+                        
+                        
+                        <br><b>Sectores: </b><br>
+                                                
+                        Logística de transporte, almacenamiento y comunicaciones,                    
+                        
+
+                    </blockquote>            
+                </td>
+            </tr>
+            
+        </tbody></table>
+        </td>
+</tr>
+<!--Inicio nutraceutico-->			   	
+<tr>        
+    <td width="100%"><a name="nutraceuticos"></a></td>
+</tr>
+<!--Fin nutraceutico-->
+<!--Inicio de protocolos de vigilancia epidemiológica-->
+<tr>        
+    <td width="100%"></td>
+</tr>
+<!--Fin de protocolos de vigilancia epidemiológica-->
+<!--Inicio de prototipos-->
+<tr>        
+    <td width="100%"></td>
+</tr>
+<!--Fin de prototipos-->
+<tr>        
+    <td width="100%"><a name="tecnologicos"></a></td>
+</tr>
+<tr>        
+    <td width="100%"></td>
+</tr>
+<tr>        
+    <td width="100%"></td>
+</tr>
+<tr>        
+    <td width="100%"><a name="disnio"></a></td>
+</tr>
+<tr>        
+    <td width="100%"><a name="disnio"></a></td>
+</tr>
+<tr>        
+    <td width="100%"><a name="disnio"></a></td>
+</tr>
+<!--Inicio Poblaciones mejoradas de razas pecuarias--> 
+<tr>        
+    <td width="100%"><a name="disnio"></a></td>
+</tr>
+<!--Fin Poblaciones mejoradas de razas pecuarias-->
+<tr>        
+    <td width="100%"><a name="disnio"></a></td>
+</tr>	
+<!--Inicio Nuevo registro cientifico-->
+<tr>        
+    <td width="100%"><a name="registro_cientifico"></a></td>
+</tr>
+<!--Fin Nuevo registro cientifico-->
+<tr>        
+    <td width="100%"><a name="procesos"></a></td>
+</tr>
+<tr>        
+    <td width="100%"></td>
+</tr>
+<tr>        
+    <td width="100%"></td>
+</tr>
+<tr>        
+    <td width="100%"><a name="disnio"></a></td>
+</tr>
+<tr>
+    <td></td>
+</tr>
+<tr>        
+    <td width="100%"><a name="disnio"></a></td>
+</tr>
+<tr>        
+    <td width="100%"></td>
+</tr>
+<!--Inicio de concepto tecnico-->
+<tr>        
+    <td width="100%"></td>
+</tr>
+<!--Fin de concepto tecnico-->
+<tr>        
+    <td width="100%"></td>
+</tr>
+
+<tr>        
+    <td width="100%">
+
+        <table width="100%" style="border:#999 1px solid">
+            <tbody><tr>
+                <td><h3>Informes de investigación</h3></td>
+            </tr>    
+                
+            <tr>
+                <td>
+                    <img src="./CvLAC - RG_files/chulo.jpg" height="15px" width="15px">
+                    
+            <li><b>Producción técnica - Informes de investigación</b></li></td>
+</tr>
+<tr>
+    <td>
+        <blockquote>
+                                
+            JOSE ALONSO OVIEDO MONROY,                    
+            
+            Desarrollo de una herramienta de selección de personal basada en reclutamiento predictivo e inteligencia artificial                
+            . En: Colombia,&nbsp;
+            ,2021,&nbsp;
+            
+            
+            
+                           
+            <br><b>Areas: </b><br>
+                                    
+            Ingeniería y Tecnología -- Ingenierías Eléctrica, Electrónica e Informática -- Ingeniería de Sistemas y Comunicaciones,                    
+            
+            
+            
+        </blockquote>
+    </td>
+</tr>
+
+</tbody></table>
+</td>
+</tr>
+<!--Inicio secuencias genticas-->
+<tr>        
+    <td width="100%"></td>
+</tr>
+<!--Fin secuencias genticas-->
+<tr>        
+    <td width="100%"></td>
+</tr>  
+<tr>        
+    <td width="100%"><a name="otra_prod_tecnica"></a></td>
+</tr>
+
+<tr>        
+    <td width="100%"></td>
+</tr>
+<tr>        
+    <td width="100%"><a name="demas_trabajos"></a>
+        <table width="100%" style="border:#999 1px solid">
+            <tbody><tr>
+                <td><h3>Demás trabajos</h3></td>
+            </tr>
+                
+            <tr>
+                <td>
+                    
+            <li><b>Demás trabajos - Demás trabajos</b></li></td>
+</tr>
+<tr>
+    <td>
+        <blockquote>
+                                
+            JOSE ALONSO OVIEDO MONROY,                    
+            
+            Puntos fuertes y débiles en la formación por competencias según los técnicos y tecnólogos del Sena
+            . En: Colombia,&nbsp;
+            ,2015,&nbsp;
+            <i>finalidad: </i>&nbsp;
+            
+                           
+            <br><b>Areas: </b><br>
+                                    
+            Ciencias Sociales -- Ciencias de la Educación -- Educación General (Incluye Capacitación, Pedagogía),                    
+            
+            
+            
+            <br><b>Sectores: </b><br>
+                                    
+            Educación - Otro,                    
+            
+        </blockquote>
+    </td>
+</tr>
+
+</tbody></table>
+</td>
+</tr>
+<tr>
+    <td width="100%">
+        
+
+</td>
+</tr>
+<tr>
+    <td width="100%">
+        
+
+</td>
+</tr>
+<tr>
+    <td width="100%"></td>
+</tr>
+<tr>
+    <td width="100%"></td>
+</tr>
+<tr>
+    <td width="100%">        
+        
+    </td>
+</tr>
+<tr>
+    <td width="100%">
+            <table width="100%" style="border:#999 1px solid">
+            <tbody><tr>
+                <td id="proyectos"><h3>Proyectos</h3></td>
+            </tr>
+                
+
+            <tr>
+                <td>
+                    <blockquote>
+                        
+                        <i>Tipo de proyecto:&nbsp;</i>Investigación, desarrollo e Innovación&nbsp;<br>
+                        Diseño de un modelo básico de gestión financiera y administrativa para las tiendas clasificadas como micro-empresas comerciales de la comuna 5 de la ciudad de Ibagué<br>
+                        <i>Inicio:&nbsp;</i>Enero&nbsp;
+                        2016                
+                        
+                        
+                        <i>Fin:&nbsp;</i>Diciembre&nbsp;
+                        2016
+                        
+                        <i>Duración&nbsp;</i><br>
+                        <strong>Resumen</strong>
+                        <p class="test1">                                                                 
+                            Diseñar un modelo básico de Gestión Financiera y Administrativa para las tiendas clasificadas como micro-empresas comerciales de la comuna 5 de la ciudad de Ibagué, con el fin de prever la situación financiera de las micro-empresas comerciales de Ibagué, analizar el control económico, diagnosticar la situación financiera de los entes económicos y así implementar Contabilidad aplicada de flujo de caja y generar un diseño didáctico de un sistema Contable básico. <br>                                
+                        </p>                                                
+
+                    </blockquote>                    
+                </td>                         
+            </tr>
+
+
+
+                
+
+            <tr>
+                <td>
+                    <blockquote>
+                        
+                        <i>Tipo de proyecto:&nbsp;</i>Investigación y desarrollo&nbsp;<br>
+                        Diseño de un software integrado de tests funcionales aplicados al deporte<br>
+                        <i>Inicio:&nbsp;</i>Febrero&nbsp;
+                        2020                
+                        
+                        
+                        <i>Fin:&nbsp;</i>Diciembre&nbsp;
+                        2020
+                        
+                        <i>Duración&nbsp;</i><br>
+                        <strong>Resumen</strong>
+                        <p class="test1">                                                                 
+                            Una vez recopilados y categorizados los tests deportivos, fueron implementados en una herramienta tecnológica de fácil uso y acceso, la cual va a permitir evolucionar en la obtención de información y en el tratamiento de la misma, la cual permitirá llevar sóli- dos procesos de seguimiento e interpretación de datos que pueden llevar o incrementar el nivel deportivo y, a su vez, mejorar los procesos metodológicos implementados por los entrenadores; y, de otra parte, mejorar la transferencia de conocimiento entre los instructores y aprendices del área de deportes del SENA Regional Tolima.<br>                                
+                        </p>                                                
+
+                    </blockquote>                    
+                </td>                         
+            </tr>
+
+
+
+                
+
+            <tr>
+                <td>
+                    <blockquote>
+                        
+                        <img src="./CvLAC - RG_files/chulo.jpg" height="15px" width="15px">
+                        
+                        <i>Tipo de proyecto:&nbsp;</i>Investigación y desarrollo&nbsp;<br>
+                        Desarrollo de una herramienta de selección de personal basada en reclutamiento predictivo e inteligencia artificial<br>
+                        <i>Inicio:&nbsp;</i>Febrero&nbsp;
+                        2021                
+                        
+                        
+                        <i>Fin:&nbsp;</i>Diciembre&nbsp;
+                        2021
+                        
+                        <i>Duración&nbsp;</i><br>
+                        <strong>Resumen</strong>
+                        <p class="test1">                                                                 
+                            El talento humano define en gran medida la capacidad que tiene una organización para adaptarse a los cambios que el medio exige; sin embargo, su adquisición es una de las tareas más complejas que hoy en día existe. Actualmente, son pocos los elementos de juicio que permiten tomar decisiones adecuadas, lo cual, en muchas ocasiones se transforma en contratación de personal con bajos niveles de compromiso y satisfacción, generando baja productividad y altos costos para las mismas. 
+
+Por tal motivo, se plantea la necesidad de optimizar esta tarea a partir del desarrollo de aplicativos inteligentes, que permita disminuir el volumen de trabajo de su personal administrativo, caracterizando a los candidatos adecuados de acuerdo con el perfil requerido optimizando los costos y gastos de personal.
+<br>                                
+                        </p>                                                
+
+                    </blockquote>                    
+                </td>                         
+            </tr>
+
+
+
+                
+
+            <tr>
+                <td>
+                    <blockquote>
+                        
+                        <i>Tipo de proyecto:&nbsp;</i>Investigación y desarrollo&nbsp;<br>
+                        Plataforma virtual de e-commerce para el posicionamiento de marca de las mipymes del sector gastronómico de la ciudad de ibagué<br>
+                        <i>Inicio:&nbsp;</i>Febrero&nbsp;
+                        2022                
+                        
+                        
+                        <i>Fin:&nbsp;</i>Diciembre&nbsp;
+                        2022
+                        
+                        <i>Duración&nbsp;</i><br>
+                        <strong>Resumen</strong>
+                        <p class="test1">                                                                 
+                            El proyecto consistió en desarrollar una plataforma de e-commerce para las MiPymes del sector gastronómico de Ibagué. Su objetivo fue mejorar el posicionamiento de marca, incrementar la visibilidad y optimizar las ventas de estas empresas. Se realizó una investigación de mercado, se desarrolló la plataforma con funcionalidades específicas y se ofreció capacitación a los empresarios. Además, se lanzó una campaña promocional y se monitoreó el rendimiento de la plataforma para realizar mejoras continuas. Se logró aumentar la visibilidad, ventas y eficiencia operativa de las MiPymes, fortaleciendo su posicionamiento en el mercado local.<br>                                
+                        </p>                                                
+
+                    </blockquote>                    
+                </td>                         
+            </tr>
+
+
+
+                
+
+            <tr>
+                <td>
+                    <blockquote>
+                        
+                        <img src="./CvLAC - RG_files/chulo.jpg" height="15px" width="15px">
+                        
+                        <i>Tipo de proyecto:&nbsp;</i>Investigación y desarrollo&nbsp;<br>
+                        Sistema de visión artificial para la localización de objetos en un ASRS en procesos de picking<br>
+                        <i>Inicio:&nbsp;</i>Marzo&nbsp;
+                        2023                
+                        
+                        
+                        <i>Fin:&nbsp;</i>Diciembre&nbsp;
+                        2023
+                        
+                        <i>Duración&nbsp;</i><br>
+                        <strong>Resumen</strong>
+                        <p class="test1">                                                                 
+                            En la actualidad, las tareas por ejecutar para el alistamiento de pedidos (picking) que se lleva a cabo en las organizaciones presentan baja eficiencia en su ejecución, en particular, en la localización de los elementos que deben ser distribuidos, de acuerdo con los requisitos establecidos por sus clientes.  Algunos factores que derivan esta problemática tienen origen en la presentación de errores humanos los cuales conllevan a la generación de reprocesos, o, momentos de baja productividad debido a diversas causas, entre ellos, el cansancio del operario a cargo. De otra parte, se requiere que algunas tareas se lleven a cabo 7 x 24 x 365 con el fin de maximizar la productividad, y por tanto, optimizar los costos asociados. El sistema de visión artificial, como parte de un futuro robot, pretende realizar la recuperación automatizada de objetos (ASRS) a través del tratamiento digital de imágenes, mediante el desarrollo de algoritmos heurísticos que implementen técnicas de inteligencia artificial, con el objetivo de hacer mucho más eficiente las tareas en el alistamiento de pedidos, y por ende, optimizar el proceso. Para tal fin, se caracterizarán y modelará los tipos de elementos que se podrán reconocer a través del sistema de visión artificial; posteriormente, se diseñará, codificará y validará el conjunto de algoritmos necesarios que permitan identificar los objetos caracterizados previamente, mediante el uso de dispositivos de captura de imágenes; y, finalmente, serán implantados en una serie de ordenadores de placa reducida (Raspberry Pi) con el fin de que ejecute la función de controlador y procesador de órdenes para un robot que soporte la automatización de tareas de picking.<br>                                
+                        </p>                                                
+
+                    </blockquote>                    
+                </td>                         
+            </tr>
+
+
+
+                
+
+            <tr>
+                <td>
+                    <blockquote>
+                        
+                        <i>Tipo de proyecto:&nbsp;</i>Investigación y desarrollo&nbsp;<br>
+                        Sistema de visión artificial para la detección de enfermedades en hojas de cacao<br>
+                        <i>Inicio:&nbsp;</i>Abril&nbsp;
+                        2024                
+                        
+                        
+                        <i>Duración&nbsp;</i><br>
+                        <strong>Resumen</strong>
+                        <p class="test1">                                                                 
+                            El cacao (Theobroma cacao L.) es una planta que prospera en regiones tropicales caracterizadas
+por un clima húmedo y una precipitación pluvial adecuada. La ciudad de Ibagué, ubicada en el
+departamento del Tolima, Colombia, se encuentra dentro de las áreas geográficas idóneas para el
+cultivo del cacao. Según el informe del Instituto Colombiano Agropecuario (ICA) del año 2016, la
+producción de cacao en el Tolima alcanza una cifra aproximada de 3500 toneladas métricas de
+frutos por año.
+Sin embargo, se enfrenta a un desafío significativo, ya que aproximadamente el 40% de esta
+producción se pierde debido a la incidencia de plagas y enfermedades en las plantas de cacao.
+Con el objetivo de abordar este problema, se propone la implementación de un proyecto de
+investigación y desarrollo que haga uso de técnicas de Machine Learning (aprendizaje automático)
+y visión artificial.
+El propósito fundamental de este proyecto es la creación de una aplicación que pueda ser utilizada
+en móviles que tenga la capacidad de identificar la presencia de enfermedades en las hojas de
+cacao. Para lograr este fin, se utilizarán algoritmos de Machine Learning entrenados con un
+conjunto de datos previamente recopilado que contenga imágenes de hojas de cacao sanas y
+afectadas por enfermedades. La aplicación se diseñará de manera que sea accesible y utilizable
+en dispositivos móviles, lo que permitirá a los agricultores de los municipios de Ataco, Chaparral,
+Planadas, Ríoblanco y áreas circundantes detectar de manera rápida y precisa la presencia de
+enfermedades en sus plantas de cacao.
+El empleo de tecnologías avanzadas como Machine Learning y visión artificial en la agricultura es
+una estrategia prometedora para mejorar la producción de cultivos, reducir las pérdidas
+económicas y promover la sostenibilidad en la agricultura. La detección temprana y precisa de
+enfermedades en el cacao proporcionará a los agricultores la información necesaria para tomar
+medidas preventivas y curativas de manera oportuna, contribuyendo así al fortalecimiento de la
+industria cacaotera en la región.<br>                                
+                        </p>                                                
+
+                    </blockquote>                    
+                </td>                         
+            </tr>
+
+
+
+                
+
+            <tr>
+                <td>
+                    <blockquote>
+                        
+                        <img src="./CvLAC - RG_files/chulo.jpg" height="15px" width="15px">
+                        
+                        <i>Tipo de proyecto:&nbsp;</i>Investigación y desarrollo&nbsp;<br>
+                        Desarrollo de una herramienta para la integración de aprendices en simulación de equipos de trabajo en ambientes laborales<br>
+                        <i>Inicio:&nbsp;</i>Agosto&nbsp;
+                        2022                
+                        
+                        
+                        <i>Fin:&nbsp;</i>Noviembre&nbsp;
+                        2022
+                        
+                        <i>Duración&nbsp;</i><br>
+                        <strong>Resumen</strong>
+                        <p class="test1">                                                                 
+                            El proyecto ¿Desarrollo de una herramienta para la integración de aprendices en simulación de equipos de trabajo en ambientes laborales¿ logró diseñar e implementar exitosamente una solución tecnológica innovadora para mejorar la preparación de los aprendices en entornos laborales simulados. A través de una metodología cualitativa descriptivo-propositiva, se establecieron y documentaron los requisitos del sistema, se creó un diseño centrado en el usuario, y se desarrolló e implementó el sistema de información sin incurrir en costos adicionales, aprovechando recursos gratuitos y de acceso abierto. La colaboración activa de aprendices, instructores y personal administrativo fue crucial para garantizar que la herramienta cumpliera con las expectativas y necesidades reales, resultando en una mejora significativa en la integración y preparación de los aprendices para el entorno laboral real, y estableciendo una base sólida para futuras mejoras y adaptaciones.
+<br>                                
+                        </p>                                                
+
+                    </blockquote>                    
+                </td>                         
+            </tr>
+
+
+
+                
+
+            <tr>
+                <td>
+                    <blockquote>
+                        
+                        <i>Tipo de proyecto:&nbsp;</i>Investigación, desarrollo e Innovación&nbsp;<br>
+                        Diseño y desarrollo de una plataforma de simulación para la gestión operativa de servicios de alojamiento y administración hotelera<br>
+                        <i>Inicio:&nbsp;</i>Febrero&nbsp;
+                        2025                
+                        
+                        
+                        <i>Fin:&nbsp;</i>Diciembre&nbsp;
+                        2025
+                        
+                        <i>Duración&nbsp;</i><br>
+                        <strong>Resumen</strong>
+                        <p class="test1">                                                                 
+                            El proyecto responde a la necesidad urgente de contar con herramientas tecnológicas accesibles y adaptadas a la formación académica en hotelería y turismo, especialmente en instituciones públicas o con recursos limitados en Colombia y América Latina, como el Sena específicamente el Centro de Comercio y Servicios de la regional Tolima.
+
+Actualmente, existe una desconexión entre la teoría impartida y la práctica operativa requerida por el sector hotelero, debido a la falta de plataformas de simulación que permitan a los estudiantes experimentar y adquirir competencias en áreas clave como reservas, housekeeping, atención al cliente, revenue management y más. Las soluciones comerciales existentes son costosas y están diseñadas para la operación real, no para contextos educativos.
+
+Frente a este panorama, se propone diseñar e implementar una plataforma de simulación integral que permita modelar los procesos operativos de un hotel, ofreciendo un entorno interactivo y pedagógicamente adaptado para el aprendizaje activo. Esta herramienta será desarrollada bajo un enfoque modular, con base en los principios del software educativo.
+
+El proyecto contempla fases de recolección de información, diseño, desarrollo e implementación, priorizando los requisitos del entorno académico. Además de cerrar la brecha digital en la formación hotelera, busca impactar positivamente en la empleabilidad y en la calidad del proceso formativo, alineándose con los estándares educativos del SENA y otras instituciones formadoras del sector.
+<br>                                
+                        </p>                                                
+
+                    </blockquote>                    
+                </td>                         
+            </tr>
+
+
+
+                
+
+            <tr>
+                <td>
+                    <blockquote>
+                        
+                        <img src="./CvLAC - RG_files/chulo.jpg" height="15px" width="15px">
+                        
+                        <i>Tipo de proyecto:&nbsp;</i>Investigación, desarrollo e Innovación&nbsp;<br>
+                        Diseño y desarrollo de software web, móvil y de escritorio para el control de acceso por medio de dispositivos físicos y biometría para los ambientes de formación del Centro de Comercio y Servicios del Sena Regional Tolima.<br>
+                        <i>Inicio:&nbsp;</i>Febrero&nbsp;
+                        2017                
+                        
+                        
+                        <i>Fin:&nbsp;</i>Diciembre&nbsp;
+                        2017
+                        
+                        <i>Duración&nbsp;</i><br>
+                        <strong>Resumen</strong>
+                        <p class="test1">                                                                 
+                            Desarrollar software para web, dispositivos móviles y equipos de escritorio que permita registrar y monitorear el ingreso y egreso de aprendices e instructores a los ambientes de formación del Centro de Comercio y Servicios Sena Regional Tolima utilizando sensores de reconocimiento biométrico.<br>                                
+                        </p>                                                
+
+                    </blockquote>                    
+                </td>                         
+            </tr>
+
+
+
+                
+
+            <tr>
+                <td>
+                    <blockquote>
+                        
+                        <i>Tipo de proyecto:&nbsp;</i>Investigación, desarrollo e Innovación&nbsp;<br>
+                        Integración de realidad aumentada en el proceso de enseñanza-aprendizaje de lesiones óseas<br>
+                        <i>Inicio:&nbsp;</i>Enero&nbsp;
+                        2018                
+                        
+                        
+                        <i>Fin:&nbsp;</i>Diciembre&nbsp;
+                        2018
+                        
+                        <i>Duración&nbsp;</i><br>
+                        <strong>Resumen</strong>
+                        <p class="test1">                                                                 
+                            Dada la necesidad de entregar al campo laboral técnicos, tecnólogos y profesionales idóneos con altas capacidades resolutivas, tanto en la teoría como en el accionar de las profesiones promovidas desde el área de salud del Centro de Comercio Sena Regional Tolima, en los planteamientos técnico-científicos sobre el campo de la anatomía y fisiología humana, que son abordados y confrontados desde el inicio de la formación, y el grado de exigencia de la calidad en los procesos de formación, se evidencia la necesidad de adquirir conocimientos certeros que definan un resultado exitoso en la toma de decisiones desde el área de salud y el concepto de seguridad del paciente, garantizando un servicio idóneo y de calidad, obteniendo una estandarización de las actuaciones como servidores asistenciales.
+
+Por otra lado, el desconocimiento de las proporciones anatómicas, conlleva a realizar procedimientos erróneos, comprometiendo la integralidad del paciente frente a  los programas de seguridad, y la incidencia a incrementar eventos adversos, además, la falta de un modelo pedagógico que fusione el ámbito tecnológico asociando el concepto del cuerpo humano, sus estructuras y el conocimiento de su propio funcionamiento interactuando con el aprendiz mismo,no permite un aprendizaje óptimo. Entonces, los conocimientos sobre las anatofisiopatologías humanas son analizados por casuística vivencial, lo que conlleva a  enfatizar los conceptos propios en la materia a través de una herramienta eficaz aprovechando las nuevas tecnologías y su interacción con la población actual.
+
+Con la globalización y los vertiginosos cambios que se están dando en todos los ámbitos de la sociedad científica y educativa, es prioritario tener  herramientas  educativas que respondan a las exigencias y las necesidades del  aprendiz SENA. Tal herramienta ha de promover el desarrollo de competencias que le permitan al aprendiz identificar e incorporar altas cualidades laborales y profesionales.
+
+En la actualidad, el Centro de Comercio y Servicios de la  Regional Tolima,  y  la  red tecnológica de servicios de salud no cuenta con una herramienta de fácil acceso  que le permita desarrollar permanentemente una verificación de saberes  frente a  los posibles casos de politraumatismos  y la incidencia de fracturas frente al perfil epidemiológico realizando una identificación de las características de las mismas.
+
+En ese orden de ideas, la experiencia de formación permite evidenciar la carencia de medios de estudio innovadores y tecnológicos portátiles, que permitan al aprendiz y faciliten al instructor el aprendizaje de los  componentes anatofisiopatologícos humanos y el desarrollo de conocimientos previos a la práctica asistencial en área de la salud y la docencia misma.
+<br>                                
+                        </p>                                                
+
+                    </blockquote>                    
+                </td>                         
+            </tr>
+
+
+
+                
+
+            <tr>
+                <td>
+                    <blockquote>
+                        
+                        <i>Tipo de proyecto:&nbsp;</i>Investigación, desarrollo e Innovación&nbsp;<br>
+                        PARAMETRIZACIÓN DE MEDICAMENTOS DEL GRUPO CARDIOVASCULAR Y ANTINEOPLÍSICOS EN LA APLICACIÓN SIFAR Y HERRAMIENTAS DE CÁLCULO DE DOSIS Y DILUCIONES<br>
+                        <i>Inicio:&nbsp;</i>Febrero&nbsp;
+                        2019                
+                        
+                        
+                        <i>Fin:&nbsp;</i>Diciembre&nbsp;
+                        2019
+                        
+                        <i>Duración&nbsp;</i><br>
+                        <strong>Resumen</strong>
+                        <p class="test1">                                                                 
+                            Dados los errores en medicación, la OMS lanzó una iniciativa mundial para reducir a la mitad los daños que se pueden generar por errores en la medicación. En este sentido el SENA desarrolló una aplicación para dispositivos móviles basada en herramientas y fuentes de libre acceso que permita minimizar los errores en la medicación.<br>                                
+                        </p>                                                
+
+                    </blockquote>                    
+                </td>                         
+            </tr>
+
+
+
+                
+
+            <tr>
+                <td>
+                    <blockquote>
+                        
+                        <i>Tipo de proyecto:&nbsp;</i>Investigación y desarrollo&nbsp;<br>
+                        Diseño de un aplicativo para la gestión y control de Inventarios en distribuidoras de productos de consumo masivo de la Ciudad de Ibagué<br>
+                        <i>Inicio:&nbsp;</i>Febrero&nbsp;
+                        2020                
+                        
+                        
+                        <i>Fin:&nbsp;</i>Diciembre&nbsp;
+                        2020
+                        
+                        <i>Duración&nbsp;</i><br>
+                        <strong>Resumen</strong>
+                        <p class="test1">                                                                 
+                            El objetivo de la presente investigación es desarrollar una herramienta de base tecnológica para el mejoramiento de la gestión y operación logística en las principales empresas distribuidoras de productos de consumo masivo de Ibagué. En particular, la investigación busca contribuir al mejoramiento de las principales decisiones del manejo de los inventarios, específicamente en la planeación de compras de los pedidos en las distribuidoras.
+
+Para el desarrollo de la investigación se establecen dos etapas. La primera denominada preliminar comprenderá la documentación problemática existente frente a la gestión de inventarios, al igual que los referentes teóricos para la fundamentación del desarrollo frente a la logística en sus diferentes enfoques para el sector empresarial.<br>                                
+                        </p>                                                
+
+                    </blockquote>                    
+                </td>                         
+            </tr>
+
+
+
+                    
+        </tbody></table>    
+        
+</td></tr><tr>
+    <td width="100%">
+
+
+
+</td></tr></tbody></table></div></div></body></html>
